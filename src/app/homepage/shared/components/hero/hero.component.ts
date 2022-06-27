@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import SwiperCore, { SwiperOptions ,Navigation} from 'swiper';
+import SwiperCore, { SwiperOptions ,Navigation, Autoplay} from 'swiper';
 
 
 // install Swiper modules
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation, Autoplay]);
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
@@ -17,6 +17,10 @@ export class HeroComponent implements OnInit {
     navigation: true,
     pagination: { clickable: true },
     scrollbar: { draggable: true },
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false
+    },
   };
 
   constructor() { }

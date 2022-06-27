@@ -10,6 +10,7 @@ import { RequestDialogComponentComponent } from 'src/app/homepage/shared/compone
 })
 export class ButtonMainComponent implements OnInit {
   @Input() label!: string;
+  @Input() class!: string;
   @Output() onClick = new EventEmitter<any>();
 
   

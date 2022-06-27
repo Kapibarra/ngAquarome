@@ -1,15 +1,44 @@
 <swiper [config]="config">
     <ng-template swiperSlide>
-        <div class="hero__slider-wrapper">
+        <div class="hero__slider-wrapper color-1">
             <div class="hero__slider">
                 <div class="hero__slider-description">
                     <h1 class="slide__title">Обслуживание аквариумов в Санкт - Петербурге</h1>
                     <article class="slide__description">Комплексное обслуживание домашний и офисных аквариумов от 1900 рублей Стаж более 19-ти лет!</article>
-                    <app-button-main [label]="'test'"></app-button-main>
+                    <app-button-main [label]="'Вызвать специалиста'" [class]="'primary'"></app-button-main>
+                </div>
+                <div class="hero__slider-img">
+                    <img src="assets/imgs/hero-img1.png">
                 </div>
             </div>
         </div>
     </ng-template>
-    <ng-template swiperSlide></ng-template>
-    <ng-template swiperSlide></ng-template>
+    <ng-template swiperSlide>
+        <div class="hero__slider-wrapper color-2">
+            <div class="hero__slider">
+                <div class="hero__slider-description">
+                    <h1 class="slide__title">Ремонт аквариумного оборудования </h1>
+                    <article class="slide__description">Любые ремонтные работы. Замена / ремонт светильников. от 2000 рублей. Ваш аквариум будет как новый!</article>
+                    <app-button-main [label]="'test'"></app-button-main>
+                </div>
+                <div class="hero__slider-img">
+                    <img src="assets/imgs/hero-img2.png">
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template swiperSlide>
+        <div class="hero__slider-wrapper color-3">
+            <div class="hero__slider">
+                <div class="hero__slider-description">
+                    <h1 class="slide__title">Оформление аквариумов</h1>
+                    <article class="slide__description">Оформление аквариума живыми растениями и декорациями на Ваш выбор! Ваш аквариум будет просто великолепным!</article>
+                    <app-button-main [label]="'test'"></app-button-main>
+                </div>
+                <div class="hero__slider-img">
+                    <img src="assets/imgs/hero-img3.png">
+                </div>
+            </div>
+        </div>
+    </ng-template>
 </swiper>

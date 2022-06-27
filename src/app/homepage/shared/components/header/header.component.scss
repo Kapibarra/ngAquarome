@@ -1,0 +1,23 @@
+.header__wrapper {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 250ms ease-in-out;
+    &.filled {
+        background: #fff;
+        transition: all 250ms ease-in-out;
+    }
+    &.sticky {
+        transition: all 250ms ease-in-out;
+        background: #fff;
+        & .header {
+            padding: unset;
+            align-items: center;
+            min-height: 80px;
+            transition: all 250ms ease-in-out;
+        }
+    }
+}

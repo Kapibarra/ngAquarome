@@ -1,0 +1,15 @@
+:host::ng-deep {
+    @import "swiper/scss";
+    @import "swiper/scss/navigation";
+    @import "swiper/scss/pagination";
+    .swiper-button-prev:after {
+        content: "🠐";
+        font-size: 64px;
+        color: #fff;
+    }
+    .swiper-button-next:after {
+        content: "🠒";
+        font-size: 64px;
+        color: #fff;
+    }
+}

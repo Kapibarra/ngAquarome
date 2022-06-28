@@ -6,12 +6,15 @@
         <div class="header__nav">
             <ul>
                 <li class="header__navigation-item"><a [routerLink]="['/']">Главная</a></li>
-                <li class="header__navigation-item"><a (click)="onClickScroll('')">О продукте</a></li>
-                <li class="header__navigation-item"><a (click)="onClickScroll('')">Кому?</a></li>
-                <li class="header__navigation-item"><a (click)="onClickScroll('')">Статьи</a></li>
-                <li class="header__navigation-item"><a (click)="onClickScroll('')">Где купить?</a></li>
+                <li class="header__navigation-item"><a (click)="onClickScroll('')">О нас</a></li>
+                <li class="header__navigation-item"><a (click)="onClickScroll('')">Обслуживание</a></li>
+                <li class="header__navigation-item"><a (click)="onClickScroll('')">Отзывы</a></li>
+                <li class="header__navigation-item"><a (click)="onClickScroll('')">Услуги</a></li>
                 <li class="header__navigation-item"><a (click)="onClickScroll('')">Контакты</a></li>
             </ul>
+        </div>
+        <div class="header__contacts">
+            <app-button-main [label]="'+7 (999) 999 99 99'" [class]="'purple'"></app-button-main>
         </div>
     </div>
 </div>

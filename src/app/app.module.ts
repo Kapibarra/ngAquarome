@@ -10,6 +10,7 @@ import { MainpageComponent } from './homepage/mainpage/mainpage.component';
 import { ButtonMainComponent } from './homepage/shared/components/button-main/button-main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RequestDialogComponentComponent } from './homepage/shared/components/request-dialog-component/request-dialog-component.component';
+import { ButtonSecondaryComponent } from './homepage/shared/components/button-secondary/button-secondary.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RequestDialogComponentComponent } from './homepage/shared/components/re
     HeroComponent,
     MainpageComponent,
     ButtonMainComponent,
-    RequestDialogComponentComponent
+    RequestDialogComponentComponent,
+    ButtonSecondaryComponent
   ],
   imports: [
     BrowserModule,

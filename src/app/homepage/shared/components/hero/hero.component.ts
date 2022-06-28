@@ -18,7 +18,7 @@ export class HeroComponent implements OnInit {
     pagination: { clickable: true },
     scrollbar: { draggable: true },
     autoplay: {
-      delay: 3333500,
+      delay: 3500,
       disableOnInteraction: false
     },
   };

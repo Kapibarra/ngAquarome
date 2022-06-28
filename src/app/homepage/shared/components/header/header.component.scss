@@ -1,16 +1,18 @@
 .header__wrapper {
-    position: fixed;
     width: 100%;
+    min-height: 70px;
+    border-top: 5px solid #C7DBEC;
     top: 0;
     z-index: 9999;
-    left: 50%;
-    transform: translateX(-50%);
+    // left: 50%;
+    // transform: translateX(-50%);
     transition: all 250ms ease-in-out;
     &.filled {
         background: #fff;
         transition: all 250ms ease-in-out;
     }
     &.sticky {
+        position: fixed;
         transition: all 250ms ease-in-out;
         background: #fff;
         & .header {

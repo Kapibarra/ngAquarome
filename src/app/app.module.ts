@@ -13,6 +13,8 @@ import { RequestDialogComponentComponent } from './homepage/shared/components/re
 import { ButtonSecondaryComponent } from './homepage/shared/components/button-secondary/button-secondary.component';
 import { ReasonsComponent } from './homepage/shared/components/reasons/reasons.component';
 import { SpecialoffersComponent } from './homepage/shared/components/specialoffers/specialoffers.component';
+import { ServicesComponent } from './homepage/shared/components/services/services.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,14 +26,16 @@ import { SpecialoffersComponent } from './homepage/shared/components/specialoffe
     RequestDialogComponentComponent,
     ButtonSecondaryComponent,
     ReasonsComponent,
-    SpecialoffersComponent
+    SpecialoffersComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SwiperModule,
     MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

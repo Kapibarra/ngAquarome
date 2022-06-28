@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RequestDialogComponentComponent } from './homepage/shared/components/request-dialog-component/request-dialog-component.component';
 import { ButtonSecondaryComponent } from './homepage/shared/components/button-secondary/button-secondary.component';
 import { ReasonsComponent } from './homepage/shared/components/reasons/reasons.component';
+import { SpecialoffersComponent } from './homepage/shared/components/specialoffers/specialoffers.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ReasonsComponent } from './homepage/shared/components/reasons/reasons.c
     ButtonMainComponent,
     RequestDialogComponentComponent,
     ButtonSecondaryComponent,
-    ReasonsComponent
+    ReasonsComponent,
+    SpecialoffersComponent
   ],
   imports: [
     BrowserModule,

@@ -4,15 +4,26 @@
     color: #282828;
     width: 267px;
     height: 52px;
-    background: linear-gradient(90deg, rgba(172, 186, 236, 0.37) 0%, rgba(196, 172, 235, 0.39) 100%);
+    background: rgba(210, 172, 236, 0.37);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
     border: none;
+    transition: all 250ms ease-in-out;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
     &:hover {
+        color: #fff;
+        transition: all 250ms ease-in-out;
+        -webkit-transition: all 250ms ease-in-out;
+        -moz-transition: all 250ms ease-in-out;
+        -ms-transition: all 250ms ease-in-out;
+        -o-transition: all 250ms ease-in-out;
         cursor: pointer;
-        background: linear-gradient(90deg, rgba(157, 170, 214, 0.37) 0%, rgba(185, 156, 231, 0.39) 100%);
+        background: rgba(182, 131, 218, 0.57);
     }
 }

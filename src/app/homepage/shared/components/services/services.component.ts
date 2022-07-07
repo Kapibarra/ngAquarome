@@ -11,6 +11,9 @@ import { ServicesService } from 'src/app/services/services.service';
 export class ServicesComponent implements OnInit {
 
 services$!: Observable<any> | undefined;
+// services: Services {
+
+// }
 
 
   constructor(private ServicesService: ServicesService) { }

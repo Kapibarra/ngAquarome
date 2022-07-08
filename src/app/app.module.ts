@@ -15,6 +15,7 @@ import { ReasonsComponent } from './homepage/shared/components/reasons/reasons.c
 import { SpecialoffersComponent } from './homepage/shared/components/specialoffers/specialoffers.component';
 import { ServicesComponent } from './homepage/shared/components/services/services.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SpecialofferComponent } from './homepage/shared/components/specialoffer/specialoffer.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
     ButtonSecondaryComponent,
     ReasonsComponent,
     SpecialoffersComponent,
-    ServicesComponent
+    ServicesComponent,
+    SpecialofferComponent
   ],
   imports: [
     BrowserModule,

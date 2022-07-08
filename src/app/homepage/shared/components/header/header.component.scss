@@ -41,6 +41,26 @@
                 flex-direction: row;
                 flex-wrap: nowrap;
                 justify-content: space-between;
+                & .header__navigation-item a {
+                    text-decoration: none;
+                    color: #282828;
+                    transition: all 250ms ease-in-out;
+                    -webkit-transition: all 250ms ease-in-out;
+                    -moz-transition: all 250ms ease-in-out;
+                    -ms-transition: all 250ms ease-in-out;
+                    -o-transition: all 250ms ease-in-out;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0);
+                    &:hover {
+                        color: #2187c7;
+                        border-bottom: 1px solid rgba(#2187c7, 1);
+                        cursor: pointer;
+                        transition: all 250ms ease-in-out;
+                        -webkit-transition: all 250ms ease-in-out;
+                        -moz-transition: all 250ms ease-in-out;
+                        -ms-transition: all 250ms ease-in-out;
+                        -o-transition: all 250ms ease-in-out;
+                    }
+                }
             }
         }
     }

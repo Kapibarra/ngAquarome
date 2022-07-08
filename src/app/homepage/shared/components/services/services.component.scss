@@ -1,0 +1,48 @@
+.services__wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    & .services__title {
+        font-family: "Ubuntu";
+        margin-top: 40px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 37px;
+    }
+}
+
+.services {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & .services__card {
+        width: 100%;
+        min-height: 270px;
+        max-width: 570px;
+        & .card__description {
+            & .servies__card-title {
+                font-family: 'Ubuntu';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 21px;
+                line-height: 20px;
+                color: #282828;
+            }
+            & .servies__card-subtitle {
+                font-family: 'Ubuntu';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 17px;
+                line-height: 15px;
+                color: #282828;
+            }
+            & .servies__card-price {}
+        }
+    }
+}

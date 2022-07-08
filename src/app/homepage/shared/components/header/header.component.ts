@@ -1,6 +1,7 @@
 
 import { ViewportScroller } from '@angular/common';
-import { Component, DoCheck, OnInit } from '@angular/core';
+import { Component, DoCheck, HostListener, OnInit } from '@angular/core';
+import { NavigationStart, Router } from '@angular/router';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -8,10 +9,21 @@ import { Component, DoCheck, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit, DoCheck {
   isSticky: boolean = false;
-  mobile: boolean = false;
   isFilled: boolean = true;
+  mobile: boolean = false;
 
-  constructor(private viewportscroller: ViewportScroller) { }
+
+  constructor(private viewportscroller: ViewportScroller, router: Router) { 
+    router.events.subscribe((event) => {
+      if (event instanceof NavigationStart) {
+        if (event.url === '') {
+          this.isFilled = false;
+        } else {
+          this.isFilled = true;
+        }
+      }
+    });
+  }
 
   ngOnInit(): void {
     if (window.screen.width <= 968) {
@@ -25,7 +37,11 @@ export class HeaderComponent implements OnInit, DoCheck {
       this.mobile = true;
     }
   }
-
+  @HostListener('window:scroll', ['$event']) // for window scroll events
+  onScroll(event: any) {
+    const verticalOffset = window.pageYOffset;
+    verticalOffset > 40 ? (this.isSticky = true) : (this.isSticky = false);
+  }
   onClickScroll(elementId: string):void {
     this.viewportscroller.scrollToAnchor(elementId);
   }

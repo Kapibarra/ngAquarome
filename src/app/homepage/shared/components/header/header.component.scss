@@ -2,6 +2,7 @@
     width: 100%;
     min-height: 70px;
     border-top: 5px solid #C7DBEC;
+    position: fixed;
     top: 0;
     z-index: 9999;
     // left: 50%;
@@ -10,10 +11,12 @@
     &.filled {
         background: #fff;
         transition: all 250ms ease-in-out;
+        box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
     }
     &.sticky {
         position: fixed;
         transition: all 250ms ease-in-out;
+        box-shadow: 0px 6px 12px rgb(214, 214, 214, .7);
         background: #fff;
         & .header {
             padding: unset;

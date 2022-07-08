@@ -4,7 +4,7 @@ export class Service {
     description: string;
     fromPrice: string;
     image: string;
-    imageLoaded: boolean = false;
+    // imageLoaded: boolean = false;
   constructor(service: Service) {
     this.name = service.name;
     this.description = service.description;

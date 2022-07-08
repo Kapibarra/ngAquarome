@@ -1,8 +1,8 @@
 <div class="services__wrapper">
     <div class="services__title"></div>
-    <div class="services" *ngFor="let service of services$ | async">
+    <div class="services" *ngFor="let service of services">
         <h3>{{service.name}}</h3>
         <p>{{service.description}}</p>
-        <p>{{service.price}}</p>
+        <p>{{service.fromPrice}}</p>
     </div>
 </div>

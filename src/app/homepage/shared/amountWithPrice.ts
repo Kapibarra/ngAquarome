@@ -1,4 +1,4 @@
 export interface AmountWithPrice {
-    time: number;
+    amount: number;
     price: number;
   }

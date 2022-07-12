@@ -12,6 +12,22 @@
     }
 }
 
+.color0 {
+    background: #F6F6FB;
+}
+
+.color1 {
+    background: rgba(191, 216, 241, 0.5);
+}
+
+.color2 {
+    background: #CBF7D2;
+}
+
+.color3 {
+    background: rgba(179, 187, 230, 0.3);
+}
+
 .services {
     width: 100%;
     max-width: 1180px;
@@ -24,8 +40,17 @@
     & .services__card {
         width: 100%;
         min-height: 270px;
-        max-width: 570px;
+        max-width: 540px;
+        margin-bottom: 30px;
+        padding: 15px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
         & .card__description {
+            width: 100%;
+            max-width: 266px;
             & .servies__card-title {
                 font-family: 'Ubuntu';
                 font-style: normal;
@@ -33,6 +58,7 @@
                 font-size: 21px;
                 line-height: 20px;
                 color: #282828;
+                margin-bottom: 10px;
             }
             & .servies__card-subtitle {
                 font-family: 'Ubuntu';
@@ -41,6 +67,7 @@
                 font-size: 17px;
                 line-height: 15px;
                 color: #282828;
+                margin-bottom: 30px;
             }
             & .servies__card-price {}
         }

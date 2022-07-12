@@ -1,11 +1,12 @@
 <div class="services__wrapper">
     <div class="services__title">Тарифы на обслуживание</div>
     <div class="services">
-        <div class="services__card" *ngFor="let service of services">
+        <div class="services__card color{{bgcolor}}" *ngFor="let service of services; index as bgcolor">
             <div class="card__description">
                 <h3 class="servies__card-title">{{service.name}}</h3>
                 <p class="servies__card-subtitle">{{service.description}}</p>
-                <p class="servies__card-price">От {{service.fromPrice}} рублей</p>
+                <p class="servies__card-price">От <span class="price-font">{{service.fromPrice}}</span> рублей</p>
+                <a class="services__card-price-link">Все цены</a>
             </div>
             <div class="card__image">
                 <img src="{{service.image}}">

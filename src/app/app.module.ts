@@ -16,6 +16,7 @@ import { SpecialoffersComponent } from './homepage/shared/components/specialoffe
 import { ServicesComponent } from './homepage/shared/components/services/services.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SpecialofferComponent } from './homepage/shared/components/specialoffer/specialoffer.component';
+import { PricepageComponent } from './homepage/pricepage/pricepage.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SpecialofferComponent } from './homepage/shared/components/specialoffer
     ReasonsComponent,
     SpecialoffersComponent,
     ServicesComponent,
-    SpecialofferComponent
+    SpecialofferComponent,
+    PricepageComponent
   ],
   imports: [
     BrowserModule,

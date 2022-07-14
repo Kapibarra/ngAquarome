@@ -79,7 +79,9 @@
                 color: #282828;
                 margin-bottom: 30px;
             }
-            & .servies__card-price {}
+            & .servies__card-price {
+                margin-top: 40px;
+            }
             & .services__card-price-link {
                 display: flex;
                 max-width: 100px;
@@ -94,6 +96,7 @@
                 -moz-transition: all 250ms ease-in-out;
                 -ms-transition: all 250ms ease-in-out;
                 -o-transition: all 250ms ease-in-out;
+                text-decoration: none;
                 & img {
                     transform: translateX(10px);
                     -webkit-transform: translateX(10px);

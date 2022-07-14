@@ -17,25 +17,25 @@ services: Service[] = [
     name: 'Пресноводные аквариумы в стиле «Псевдоморе»',
     description: 'Наши тарифы на обслуживание:',
     fromPrice:'2000',
-    image:''
+    image:'assets/imgs/services/service01.png'
   },
   {
     name: 'Пресноводные аквариумы с растениями',
     description: 'Наши тарифы на обслуживание:',
     fromPrice:'2000',
-    image:''
+    image:'assets/imgs/services/service02.png'
   },
   {
     name: 'Морские аквариумы с рыбами',
     description: 'Наши тарифы на обслуживание:',
     fromPrice:'3000',
-    image:''
+    image:'assets/imgs/services/service03.png'
   },
   {
     name: 'Морские аквариумы с кораллами',
     description: 'Наши тарифы на обслуживание:',
     fromPrice:'3000',
-    image:''
+    image:'assets/imgs/services/service04.png'
   },
 ];
   constructor() { }

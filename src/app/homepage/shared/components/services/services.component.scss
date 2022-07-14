@@ -12,6 +12,11 @@
     }
 }
 
+.price-font {
+    color: #143D7B;
+    font-size: 21px;
+}
+
 .color0 {
     background: #F6F6FB;
 }
@@ -39,7 +44,11 @@
     justify-content: space-between;
     & .services__card {
         width: 100%;
-        min-height: 270px;
+        min-height: 240px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
         max-width: 540px;
         margin-bottom: 30px;
         padding: 15px;
@@ -51,6 +60,7 @@
         & .card__description {
             width: 100%;
             max-width: 266px;
+            margin-right: 5px;
             & .servies__card-title {
                 font-family: 'Ubuntu';
                 font-style: normal;
@@ -70,6 +80,54 @@
                 margin-bottom: 30px;
             }
             & .servies__card-price {}
+            & .services__card-price-link {
+                display: flex;
+                max-width: 100px;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                margin-top: 80px;
+                color: #537CC2;
+                border-bottom: 1px solid rgba(#537CC2, 0);
+                transition: all 250ms ease-in-out;
+                -webkit-transition: all 250ms ease-in-out;
+                -moz-transition: all 250ms ease-in-out;
+                -ms-transition: all 250ms ease-in-out;
+                -o-transition: all 250ms ease-in-out;
+                & img {
+                    transform: translateX(10px);
+                    -webkit-transform: translateX(10px);
+                    -moz-transform: translateX(10px);
+                    -ms-transform: translateX(10px);
+                    -o-transform: translateX(10px);
+                    transition: all 250ms ease-in-out;
+                    -webkit-transition: all 250ms ease-in-out;
+                    -moz-transition: all 250ms ease-in-out;
+                    -ms-transition: all 250ms ease-in-out;
+                    -o-transition: all 250ms ease-in-out;
+                }
+                &:hover {
+                    border-bottom: 1px solid rgba(#537CC2, 1);
+                    transition: all 250ms ease-in-out;
+                    -webkit-transition: all 250ms ease-in-out;
+                    -moz-transition: all 250ms ease-in-out;
+                    -ms-transition: all 250ms ease-in-out;
+                    -o-transition: all 250ms ease-in-out;
+                    cursor: pointer;
+                    & img {
+                        transform: translateX(20px);
+                        -webkit-transform: translateX(20px);
+                        -moz-transform: translateX(20px);
+                        -ms-transform: translateX(20px);
+                        -o-transform: translateX(20px);
+                        transition: all 250ms ease-in-out;
+                        -webkit-transition: all 250ms ease-in-out;
+                        -moz-transition: all 250ms ease-in-out;
+                        -ms-transition: all 250ms ease-in-out;
+                        -o-transition: all 250ms ease-in-out;
+                    }
+                }
+            }
         }
     }
 }

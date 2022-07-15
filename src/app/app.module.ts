@@ -15,7 +15,6 @@ import { ReasonsComponent } from './homepage/shared/components/reasons/reasons.c
 import { SpecialoffersComponent } from './homepage/shared/components/specialoffers/specialoffers.component';
 import { ServicesComponent } from './homepage/shared/components/services/services.component';
 import { HttpClientModule } from '@angular/common/http';
-import { SpecialofferComponent } from './homepage/shared/components/specialoffer/specialoffer.component';
 import { PricepageComponent } from './homepage/pricepage/pricepage.component';
 import { SpecialofferformComponent } from './homepage/shared/components/specialofferform/specialofferform.component';
 import { FormsModule } from '@angular/forms';
@@ -32,7 +31,6 @@ import { FormsModule } from '@angular/forms';
     ReasonsComponent,
     SpecialoffersComponent,
     ServicesComponent,
-    SpecialofferComponent,
     PricepageComponent,
     SpecialofferformComponent
   ],

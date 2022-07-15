@@ -1,0 +1,48 @@
+.specialoffers-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    & .specialoffers_title {
+        font-family: 'Ubuntu';
+        margin-top: 40px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 37px;
+    }
+}
+
+.special__offers {
+    & .special__offers-card {}
+}
+
+.special__offers-description {
+    & .special__offers-title-1 {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 34px;
+        color: #282828;
+    }
+    & .special__offers-title-2 {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 69px;
+        color: #282828;
+        /* identical to box height */
+    }
+    & .special__offers-subtitle {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150.5%;
+        /* or 33px */
+        text-align: justify;
+        letter-spacing: 0.02em;
+        color: #9E9C9C;
+    }
+}

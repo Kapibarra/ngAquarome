@@ -1,0 +1,39 @@
+.contacts__form {
+    & input {
+        border: 1px solid #BDBDBD;
+        width: 100%;
+        max-width: 497px;
+        height: 65px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150.5%;
+        /* or 27px */
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #9E9C9C;
+    }
+}
+
+.form__button-send {
+    background: #282828;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    line-height: 153%;
+    /*or34px*/
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    width: 245px;
+    height: 46px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    &:hover {}
+}

@@ -17,6 +17,8 @@ import { ServicesComponent } from './homepage/shared/components/services/service
 import { HttpClientModule } from '@angular/common/http';
 import { SpecialofferComponent } from './homepage/shared/components/specialoffer/specialoffer.component';
 import { PricepageComponent } from './homepage/pricepage/pricepage.component';
+import { SpecialofferformComponent } from './homepage/shared/components/specialofferform/specialofferform.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,12 +33,14 @@ import { PricepageComponent } from './homepage/pricepage/pricepage.component';
     SpecialoffersComponent,
     ServicesComponent,
     SpecialofferComponent,
-    PricepageComponent
+    PricepageComponent,
+    SpecialofferformComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SwiperModule,
+    FormsModule,
     MatDialogModule,
     BrowserAnimationsModule,
     HttpClientModule

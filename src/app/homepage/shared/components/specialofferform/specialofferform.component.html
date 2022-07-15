@@ -1,0 +1,8 @@
+<form class="contacts__form" (ngSubmit)="onSubmit(formValue.value)" novalidate #formValue="ngForm">
+    <input placeholder="Введите Телефон" ngModel name="phone" />
+    <button type="submit" class="form__button">Отправить</button>
+    <p class="smalltext">Гарантируем конфидициальность и целевое использование данных</p>
+    <div class="popUp popUpVisible" id="popUp">
+        <img src="assets/icons/Done.png"> Ваше сообщение успешно отправлено!
+    </div>
+</form>

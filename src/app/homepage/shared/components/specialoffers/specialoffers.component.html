@@ -1,5 +1,21 @@
-<swiper [config]="config">
-    <ng-template swiperSlide>
+<div class="specialoffers-wrapper">
+    <h2 class="specialoffers_title">
+        Акции
+    </h2>
+    <div class="special__offers">
+        <swiper [config]="config">
+            <ng-template swiperSlide>
+                <div class="special__offers-description">
+                    <h3 class="special__offers-title-1">ПЕРВЫЙ РАЗ У НАС?</h3>
+                    <h2 class="special__offers-title-2">10% Скидка</h2>
+                    <p class="special__offers-subtitle">Скидка действительна на первое обслуживание Вашего аквариума</p>
 
-    </ng-template>
-</swiper>
+                    <app-specialofferform></app-specialofferform>
+                </div>
+                <div class="special__offers-image">
+
+                </div>
+            </ng-template>
+        </swiper>
+    </div>
+</div>

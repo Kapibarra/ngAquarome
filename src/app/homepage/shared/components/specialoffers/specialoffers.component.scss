@@ -1,22 +1,46 @@
 .specialoffers-wrapper {
     width: 100%;
+    background: #C6D9EE;
+}
+
+.specialoffers_title {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    & .specialoffers_title {
-        font-family: 'Ubuntu';
-        margin-top: 40px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 37px;
-    }
+    text-align: left;
+    font-family: 'Ubuntu';
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 40px;
 }
 
 .special__offers {
-    & .special__offers-card {}
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    & .special__offers-card {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        transform: translate(0, 20%);
+        margin-top: 20px;
+        padding: 60px;
+        background: #FFFFFF;
+        -webkit-transform: translate(0, 20%);
+        -moz-transform: translate(0, 20%);
+        -ms-transform: translate(0, 20%);
+        -o-transform: translate(0, 20%);
+    }
 }
 
 .special__offers-description {
+    width: 100%;
+    max-width: 560px;
     & .special__offers-title-1 {
         font-family: 'Ubuntu';
         font-style: normal;

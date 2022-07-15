@@ -35,5 +35,52 @@
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
-    &:hover {}
+    transition: all 250ms ease-in-out;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    &:hover {
+        cursor: pointer;
+        background: #70b2eb;
+        color: #fff;
+        transition: all 250ms ease-in-out;
+        -webkit-transition: all 250ms ease-in-out;
+        -moz-transition: all 250ms ease-in-out;
+        -ms-transition: all 250ms ease-in-out;
+        -o-transition: all 250ms ease-in-out;
+    }
+}
+
+.popUp {
+    display: none;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 9999;
+    background: #fff;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    max-height: 200px;
+    box-sizing: border-box;
+    padding: 30px;
+    border: 3px solid #EFFCF0;
+    opacity: 0;
+    transition: all 1000ms ease-in-out;
+    box-shadow: 0 8px 20px 0 rgb(0 0 0 / 5%);
+}
+
+.popUpVisible {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    transition: all 1000ms ease-in-out;
+    & img {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 10px;
+    }
 }

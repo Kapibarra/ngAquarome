@@ -18,15 +18,15 @@
 }
 
 .color0 {
-    background: #F6F6FB;
+    background: #ffffff;
 }
 
 .color1 {
-    background: rgba(191, 216, 241, 0.5);
+    background: #F3F6FD;
 }
 
 .color2 {
-    background: #CBF7D2;
+    background: #EFFCF0;
 }
 
 .color3 {
@@ -57,6 +57,13 @@
         -moz-border-radius: 8px;
         -ms-border-radius: 8px;
         -o-border-radius: 8px;
+        border: 1px solid rgba(206, 209, 213, .4);
+        box-shadow: 0 8px 20px 0 rgb(0 0 0 / 5%);
+        transition: all 250ms ease-in-out;
+        -webkit-transition: all 250ms ease-in-out;
+        -moz-transition: all 250ms ease-in-out;
+        -ms-transition: all 250ms ease-in-out;
+        -o-transition: all 250ms ease-in-out;
         & .card__description {
             width: 100%;
             max-width: 266px;
@@ -131,6 +138,15 @@
                     }
                 }
             }
+        }
+        &:hover {
+            cursor: pointer;
+            transition: all 250ms ease-in-out;
+            -webkit-transition: all 250ms ease-in-out;
+            -moz-transition: all 250ms ease-in-out;
+            -ms-transition: all 250ms ease-in-out;
+            -o-transition: all 250ms ease-in-out;
+            box-shadow: 0 12px 32px 0 rgb(0 0 0 / 8%);
         }
     }
 }

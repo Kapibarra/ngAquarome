@@ -18,6 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { PricepageComponent } from './homepage/pricepage/pricepage.component';
 import { SpecialofferformComponent } from './homepage/shared/components/specialofferform/specialofferform.component';
 import { FormsModule } from '@angular/forms';
+import { ReviewsComponent } from './homepage/shared/components/reviews/reviews.component';
+import { AboutComponent } from './homepage/shared/components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { FormsModule } from '@angular/forms';
     SpecialoffersComponent,
     ServicesComponent,
     PricepageComponent,
-    SpecialofferformComponent
+    SpecialofferformComponent,
+    ReviewsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

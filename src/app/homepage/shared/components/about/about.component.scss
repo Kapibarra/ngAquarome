@@ -1,0 +1,68 @@
+.about__wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    & .about__title {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 37px;
+        color: #282828;
+        margin-bottom: 40px;
+    }
+}
+
+.about {
+    display: grid;
+    grid-auto-columns: 280px;
+    grid-auto-flow: column;
+    overflow: auto;
+    gap: 16px;
+    grid-template-areas: "one two two" "one three four";
+    grid-template-columns: 444px 346px 346px;
+    padding: 4px 16px;
+    grid-template-rows: 284px 312px;
+    justify-content: center;
+    padding: 4px 16px;
+    & .about__card {
+        grid-area: one;
+        grid-template-rows: 2fr 1fr;
+        background: #ffffff;
+        border: 1px solid #f0f0f0;
+        border-radius: 8px;
+        box-shadow: 0 2px 3px rgb(38 38 38 / 4%), 0 8px 34px rgb(38 38 38 / 3%);
+        padding: 32px 20px;
+        text-align: center;
+    }
+    & .about__card-1 {
+        background: #ffffff;
+        border: 1px solid #f0f0f0;
+        border-radius: 8px;
+        box-shadow: 0 2px 3px rgb(38 38 38 / 4%), 0 8px 34px rgb(38 38 38 / 3%);
+        padding: 32px 20px;
+        text-align: center;
+    }
+    & .about__card-2 {
+        align-items: center;
+        display: flex;
+        flex-flow: row-reverse;
+        grid-area: two;
+        justify-items: center;
+        background: #ffffff;
+        border: 1px solid #f0f0f0;
+        border-radius: 8px;
+        box-shadow: 0 2px 3px rgb(38 38 38 / 4%), 0 8px 34px rgb(38 38 38 / 3%);
+        padding: 32px 20px;
+        text-align: center;
+    }
+    & .about__card-3 {
+        background: #ffffff;
+        border: 1px solid #f0f0f0;
+        border-radius: 8px;
+        box-shadow: 0 2px 3px rgb(38 38 38 / 4%), 0 8px 34px rgb(38 38 38 / 3%);
+        padding: 32px 20px;
+        text-align: center;
+    }
+}

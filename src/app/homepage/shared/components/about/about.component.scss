@@ -20,7 +20,7 @@
     grid-auto-flow: column;
     overflow: auto;
     gap: 16px;
-    grid-template-areas: "one two two" "one three four";
+    grid-template-areas: " three four one" "two two one";
     grid-template-columns: 444px 346px 346px;
     padding: 4px 16px;
     grid-template-rows: 284px 312px;
@@ -61,7 +61,7 @@
         background: #ffffff;
         border: 1px solid #f0f0f0;
         border-radius: 8px;
-        box-shadow: 0 2px 3px rgb(38 38 38 / 4%), 0 8px 34px rgb(38 38 38 / 3%);
+        box-shadow: 0 2px 2px rgb(38 38 38 / 4%), 0 8px 34px rgb(38 38 38 / 3%);
         padding: 32px 20px;
         text-align: center;
     }

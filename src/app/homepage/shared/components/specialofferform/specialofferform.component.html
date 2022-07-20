@@ -1,11 +1,11 @@
 <form class="contacts__form" (ngSubmit)="onSubmit(formValue.value)" novalidate #formValue="ngForm">
+    <div class="popUp" id="popUp"> Ваше сообщение успешно отправлено!
+    </div>
     <input placeholder="Введите Телефон" ngModel name="phone" />
     <p class="smalltext">Гарантируем конфидициальность и целевое использование данных</p>
     <div class="form__button-wrapper">
         <a class="form__button-link">НЕТ, СПАСИБО</a>
         <button type="submit" class="form__button-send">Получить скидку 10%</button>
     </div>
-    <div class="popUp popUpVisible" id="popUp">
-        <img src="assets/icons/Done.png"> Ваше сообщение успешно отправлено!
-    </div>
+
 </form>

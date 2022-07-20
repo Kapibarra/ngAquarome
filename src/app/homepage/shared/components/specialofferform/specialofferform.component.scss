@@ -9,10 +9,101 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 150.5%;
-        /* or 27px */
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        /*or27px*/
         text-align: center;
         letter-spacing: 0.02em;
         color: #9E9C9C;
+        &::placeholder {
+            transition: all 350ms ease;
+            padding-left: 0px;
+            transform: translateX(3px);
+            font-size: 18px;
+            -webkit-transform: translateX(3px);
+            -moz-transform: translateX(3px);
+            -ms-transform: translateX(3px);
+            -o-transform: translateX(3px);
+            -webkit-transition: all 350ms ease;
+            -moz-transition: all 350ms ease;
+            -ms-transition: all 350ms ease;
+            -o-transition: all 350ms ease;
+        }
+        &:focus {
+            border: 1px solid #2187c7;
+            transition: all 250ms ease;
+            &::placeholder {
+                padding-left: 5px;
+                transition: all 350ms ease;
+                transform: translateX(-150px);
+                font-size: 18px;
+                -webkit-transform: translateX(-150px);
+                -moz-transform: translateX(-150px);
+                -ms-transform: translateX(-150px);
+                -o-transform: translateX(-150px);
+                -webkit-transition: all 350ms ease;
+                -moz-transition: all 350ms ease;
+                -ms-transition: all 350ms ease;
+                -o-transition: all 350ms ease;
+            }
+        }
+        &:focus-visible {
+            outline: none;
+        }
+    }
+    & .smalltext {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150.5%;
+        /* or 33px */
+        text-align: justify;
+        letter-spacing: 0.02em;
+        color: #9E9C9C;
+        margin-top: 25px;
+    }
+    & .smalltext2 {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150.5%;
+        /* or 33px */
+        text-align: justify;
+        letter-spacing: 0.02em;
+        color: #181818;
+        margin-top: 20px;
+    }
+    & .form__button-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+        & .form__button-link {
+            color: #9E9C9C;
+            border-bottom: 1px solid rgba(#9E9C9C, 1);
+            transition: all 250ms ease-in-out;
+            -webkit-transition: all 250ms ease-in-out;
+            -moz-transition: all 250ms ease-in-out;
+            -ms-transition: all 250ms ease-in-out;
+            -o-transition: all 250ms ease-in-out;
+            &:hover {
+                transition: all 250ms ease-in-out;
+                -webkit-transition: all 250ms ease-in-out;
+                -moz-transition: all 250ms ease-in-out;
+                -ms-transition: all 250ms ease-in-out;
+                -o-transition: all 250ms ease-in-out;
+                cursor: pointer;
+                color: #2187c7;
+                border-bottom: 1px solid rgba(#2187c7, 1);
+            }
+        }
     }
 }
 
@@ -29,8 +120,8 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    width: 245px;
-    height: 46px;
+    width: 285px;
+    height: 60px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;

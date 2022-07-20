@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Mail } from './specialofferform';
@@ -9,11 +10,15 @@ import { Mail } from './specialofferform';
 })
 export class SpecialofferformComponent implements OnInit {
   mail!: Mail;
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private viewportscroller: ViewportScroller) {
+    
+  }
 
   ngOnInit(): void {}
+  onClickScroll(elementId: string):void {
+    this.viewportscroller.scrollToAnchor(elementId);
+  }
   onSubmit(formValue: any) {
-
     var formData = new FormData();
     for (var key in formValue) {
       formData.append(key, formValue[key]);

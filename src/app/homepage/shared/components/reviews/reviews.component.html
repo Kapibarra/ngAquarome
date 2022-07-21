@@ -10,77 +10,22 @@
             </h3>
             <div class="reviews__card-overall">
                 <div class="card__overall-stars">
-                    <img src="assets/imgs/reviews/starfull.png">
-                    <img src="assets/imgs/reviews/starfull.png">
-                    <img src="assets/imgs/reviews/starfull.png">
-                    <img src="assets/imgs/reviews/starfull.png">
+                    <img src="assets/imgs/reviews/starfull.png" *ngFor="let i of [0,1,2,3]">
                     <img src="assets/imgs/reviews/starhalf.png">
                 </div>
                 <div class="card__overall-title">4.7 из 49 оценок</div>
             </div>
             <div class="reviews__card-client">
-                <div class="card__client-card">
+                <div class="card__client-card" *ngFor="let client of Review">
                     <div class="client__card-name">
-                        <div class="card__name-img"><img src="assets/imgs/reviews/client01.png"></div>
+                        <div class="card__name-img"><img [src]="client.photo"></div>
                         <div class="card__name-title">
-                            <h3>Name Name</h3>
-                            <p>desc desc</p>
+                            <h3>{{client.name}}</h3>
+                            <p>{{client.client}}</p>
                         </div>
                     </div>
                     <div class="client__card-stars">
-                        <img src="assets/imgs/reviews/starfull.png">
-                        <img src="assets/imgs/reviews/starfull.png">
-                        <img src="assets/imgs/reviews/starfull.png">
-                        <img src="assets/imgs/reviews/starfull.png">
-                        <img src="assets/imgs/reviews/starhalf.png">
-                    </div>
-                </div>
-                <div class="card__client-card">
-                    <div class="client__card-name">
-                        <div class="card__name-img"><img src="assets/imgs/reviews/client01.png"></div>
-                        <div class="card__name-title">
-                            <h3>Name Name</h3>
-                            <p>desc desc</p>
-                        </div>
-                    </div>
-                    <div class="client__card-stars">
-                        <img src="assets/imgs/reviews/starfull.png">
-                        <img src="assets/imgs/reviews/starfull.png">
-                        <img src="assets/imgs/reviews/starfull.png">
-                        <img src="assets/imgs/reviews/starfull.png">
-                        <img src="assets/imgs/reviews/starhalf.png">
-                    </div>
-                </div>
-                <div class="card__client-card">
-                    <div class="client__card-name">
-                        <div class="card__name-img"><img src="assets/imgs/reviews/client01.png"></div>
-                        <div class="card__name-title">
-                            <h3>Name Name</h3>
-                            <p>desc desc</p>
-                        </div>
-                    </div>
-                    <div class="client__card-stars">
-                        <img src="assets/imgs/reviews/starfull.png">
-                        <img src="assets/imgs/reviews/starfull.png">
-                        <img src="assets/imgs/reviews/starfull.png">
-                        <img src="assets/imgs/reviews/starfull.png">
-                        <img src="assets/imgs/reviews/starhalf.png">
-                    </div>
-                </div>
-                <div class="card__client-card">
-                    <div class="client__card-name">
-                        <div class="card__name-img"><img src="assets/imgs/reviews/client01.png"></div>
-                        <div class="card__name-title">
-                            <h3>Name Name</h3>
-                            <p>desc desc</p>
-                        </div>
-                    </div>
-                    <div class="client__card-stars">
-                        <img src="assets/imgs/reviews/starfull.png">
-                        <img src="assets/imgs/reviews/starfull.png">
-                        <img src="assets/imgs/reviews/starfull.png">
-                        <img src="assets/imgs/reviews/starfull.png">
-                        <img src="assets/imgs/reviews/starhalf.png">
+                        <img src="assets/imgs/reviews/starfull.png" *ngFor="let i of [0,1,2,3,4]">
                     </div>
                 </div>
             </div>

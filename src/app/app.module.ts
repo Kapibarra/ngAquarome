@@ -20,6 +20,8 @@ import { SpecialofferformComponent } from './homepage/shared/components/specialo
 import { FormsModule } from '@angular/forms';
 import { ReviewsComponent } from './homepage/shared/components/reviews/reviews.component';
 import { AboutComponent } from './homepage/shared/components/about/about.component';
+import { ContactspageComponent } from './homepage/contactspage/contactspage.component';
+import { ContactsComponent } from './homepage/shared/components/contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { AboutComponent } from './homepage/shared/components/about/about.compone
     PricepageComponent,
     SpecialofferformComponent,
     ReviewsComponent,
-    AboutComponent
+    AboutComponent,
+    ContactspageComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,

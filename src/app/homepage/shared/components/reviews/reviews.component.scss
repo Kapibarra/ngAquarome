@@ -1,0 +1,13 @@
+.reviews__wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    & .reviews__title {
+        font-family: 'Ubuntu';
+        margin-top: 40px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 37px;
+    }
+}

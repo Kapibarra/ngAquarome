@@ -22,6 +22,8 @@ import { ReviewsComponent } from './homepage/shared/components/reviews/reviews.c
 import { AboutComponent } from './homepage/shared/components/about/about.component';
 import { ContactspageComponent } from './homepage/contactspage/contactspage.component';
 import { ContactsComponent } from './homepage/shared/components/contacts/contacts.component';
+import { FooterComponent } from './homepage/shared/components/footer/footer.component';
+import { FormComponent } from './homepage/shared/components/form/form.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { ContactsComponent } from './homepage/shared/components/contacts/contact
     ReviewsComponent,
     AboutComponent,
     ContactspageComponent,
-    ContactsComponent
+    ContactsComponent,
+    FooterComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,

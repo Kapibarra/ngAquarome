@@ -24,6 +24,7 @@ import { ContactspageComponent } from './homepage/contactspage/contactspage.comp
 import { ContactsComponent } from './homepage/shared/components/contacts/contacts.component';
 import { FooterComponent } from './homepage/shared/components/footer/footer.component';
 import { FormComponent } from './homepage/shared/components/form/form.component';
+import { DatepickerComponent } from './homepage/shared/components/datepicker/datepicker.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { FormComponent } from './homepage/shared/components/form/form.component'
     ContactspageComponent,
     ContactsComponent,
     FooterComponent,
-    FormComponent
+    DatepickerComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +55,9 @@ import { FormComponent } from './homepage/shared/components/form/form.component'
     FormsModule,
     MatDialogModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+  ],
+  exports: [
   ],
   providers: [],
   bootstrap: [AppComponent]

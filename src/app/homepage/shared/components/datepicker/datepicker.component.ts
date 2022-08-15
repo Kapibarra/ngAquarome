@@ -1,15 +1,17 @@
+import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-datepicker',
   templateUrl: './datepicker.component.html',
-  styleUrls: ['./datepicker.component.scss']
+  styleUrls: ['./datepicker.component.scss'],
+  providers: [DatePipe]
 })
 export class DatepickerComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  currentDate = new Date();
+constructor(private datePipe: DatePipe){
+}
+  ngOnInit(): void { 
   }
-
+  
 }

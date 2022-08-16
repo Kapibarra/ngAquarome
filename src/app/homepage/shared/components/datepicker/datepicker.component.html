@@ -1,4 +1,6 @@
-<div class="date__picker">
-    <label for="start">Выберите желаемую дату:</label>
-    <input type="date" id="start" name="trip-start" value="{{currentDate | date: 'yyyy-MM-dd' }}" min="2022-01-01" max="2030-12-31">
+<div class="date__picker-wrapper">
+    <label for="date" class="label">Выберите желаемую дату:</label>
+    <div class="date__picker">
+        <input type="date" id="date" name="trip-start" value="{{currentDate | date: 'yyyy-MM-dd' }}" min="2022-01-01" max="2030-12-31">
+    </div>
 </div>

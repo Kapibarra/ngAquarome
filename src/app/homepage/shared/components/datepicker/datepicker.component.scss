@@ -1,0 +1,51 @@
+.date__picker-wrapper {
+    display: block;
+    & label {
+        display: block;
+        margin-bottom: 10px;
+        font-family: "Ubuntu";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 15px;
+        color: #282828;
+    }
+}
+
+.date__picker {
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    appearance: none;
+    border: 1px solid rgba(38, 38, 38, .24);
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px transparent;
+    box-sizing: border-box;
+    letter-spacing: -.3px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    width: 100%;
+    padding: 16px 8px;
+    & input {
+        border: none;
+        font-family: "Ubuntu";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 15px;
+        color: #282828;
+        &:focus-visible {
+            border: none;
+            outline: -webkit-focus-ring-color auto 0px;
+        }
+    }
+    & input[type="date"]::-webkit-calendar-picker-indicator {
+        color: rgba(0, 0, 0, 0);
+        opacity: 1;
+        display: block;
+        background: url(https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png) no-repeat;
+        width: 20px;
+        height: 20px;
+        border-width: thin;
+        cursor: pointer;
+    }
+}

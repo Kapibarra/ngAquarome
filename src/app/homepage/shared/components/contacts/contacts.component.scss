@@ -12,7 +12,7 @@
         background: #FFFFFF;
         border-radius: 20px;
         box-shadow: 0 -1px 2px 0.6px rgba(120, 126, 133, 0.09), 0 18px 64px -8px rgba(122, 128, 134, 0.14);
-        padding: 64px 20px;
+        padding: 64px 30px;
         & .contacts__title {
             font-family: 'Ubuntu';
             margin-top: 40px;
@@ -34,6 +34,39 @@
             letter-spacing: 0.02em;
             margin-bottom: 120px;
             color: #9E9C9C;
+        }
+    }
+}
+
+.contacts__form {
+    & .form__control {
+        margin-bottom: 30px;
+        & label {
+            display: block;
+            margin-bottom: 10px;
+            font-family: "Ubuntu";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 15px;
+            color: #282828;
+        }
+        & .form__control-input {
+            display: flex;
+            flex-direction: column;
+            max-width: 280px;
+            appearance: none;
+            border: 1px solid rgba(38, 38, 38, .24);
+            border-radius: 4px;
+            box-shadow: 0 0 0 1px transparent;
+            box-sizing: border-box;
+            letter-spacing: -.3px;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            width: 100%;
+            padding: 16px 8px;
+            &:focus-visible {
+                outline: -webkit-focus-ring-color auto 0px;
+            }
         }
     }
 }

@@ -4,7 +4,7 @@
     margin: 0 auto;
     .contacts {
         width: 100%;
-        max-width: 1180px;
+        max-width: 980px;
         margin: 0 auto;
         margin-top: 40px;
         display: flex;
@@ -38,9 +38,16 @@
     }
 }
 
+.form__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .contacts__form {
     width: 100%;
-    max-width: 700px;
+    max-width: 400px;
     & .form__control {
         margin-bottom: 30px;
         & input {

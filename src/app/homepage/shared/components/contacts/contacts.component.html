@@ -11,7 +11,11 @@
                     <input type="text" class="form__control-input" id="name" placeholder="Ваш телефон">
                 </div>
                 <app-datepicker></app-datepicker>
-                <app-button-main [label]="'Отправить'" [class]="'primary'" type="submit"></app-button-main>
+                <div class="button__wrapper">
+                    <app-button-main [label]="'Отправить'" [class]="'primary'" type="submit"></app-button-main>
+                    <p class="private">Мы гарантируем безопасность ваших данных</p>
+                </div>
+
                 <p class="form__description">Консультация по телефону</p>
                 <p class="form__description-title">Бесплатно</p>
             </form>

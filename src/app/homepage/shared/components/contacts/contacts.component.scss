@@ -62,7 +62,7 @@
         & input {
             border: 1px solid #BDBDBD;
             width: 100%;
-            max-width: 297px;
+            max-width: 394px;
             height: 55px;
             font-family: 'Ubuntu';
             font-style: normal;
@@ -133,5 +133,26 @@
         font-weight: 400;
         line-height: 130.5%;
         color: #2187c7;
+    }
+    & .button__wrapper {
+        align-items: center;
+        background: #F8F8F8;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 40px;
+        padding: 24px;
+        & .private {
+            margin-top: 12px;
+            order: 1;
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150.5%;
+            & img {
+                width: 20px
+            }
+        }
     }
 }

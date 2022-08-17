@@ -25,6 +25,7 @@ import { ContactsComponent } from './homepage/shared/components/contacts/contact
 import { FooterComponent } from './homepage/shared/components/footer/footer.component';
 import { FormComponent } from './homepage/shared/components/form/form.component';
 import { DatepickerComponent } from './homepage/shared/components/datepicker/datepicker.component';
+import { TariffsComponent } from './homepage/shared/components/tariffs/tariffs.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { DatepickerComponent } from './homepage/shared/components/datepicker/dat
     FooterComponent,
     DatepickerComponent,
     FormComponent,
+    TariffsComponent
   ],
   imports: [
     BrowserModule,

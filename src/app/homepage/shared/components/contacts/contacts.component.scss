@@ -4,7 +4,7 @@
     margin: 0 auto;
     .contacts {
         width: 100%;
-        max-width: 980px;
+        max-width: 780px;
         margin: 0 auto;
         margin-top: 40px;
         display: flex;
@@ -32,7 +32,7 @@
             line-height: 150.5%;
             /* or 33px */
             letter-spacing: 0.02em;
-            margin-bottom: 120px;
+            margin-bottom: 60px;
             color: #9E9C9C;
         }
     }
@@ -43,6 +43,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    .form__img {
+        display: block;
+        max-height: 400px;
+        & img {
+            display: block;
+            max-height: 400px;
+            opacity: 1;
+        }
+    }
 }
 
 .contacts__form {

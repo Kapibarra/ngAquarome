@@ -1,6 +1,36 @@
-<swiper [config]="config">
+<swiper [slidesPerView]="'auto'" [centeredSlides]="true" [spaceBetween]="30" [pagination]="{
+  clickable: true
+}">
     <ng-template swiperSlide>
-        123
+        <div class="service__card">
+            <figure class="card__image">
+                <img class="card__image" [src]="service.image" (load)="service.imageLoad = true" [alt]="service.name" />
+                <figcaption *ngIf="service.popularity > 50" class="card__image-label">
+                    <div>Популярное 🔥</div>
+                </figcaption>
+            </figure>
+            <h3 class="card__title">{{ service.name }}</h3>
+            <p class="card__subtitle" title="{{ service.description }}">
+                {{ service.description.length > 120 ? (service.description | slice: 0:120) + "..." : service.description }}
+            </p>
+            <div class="card__info">
+                <div class="card__info-time">
+                    <span class="card__info-time-item" [ngClass]="{ active: service.selectedTime == timeWithPrice }" *ngFor="let timeWithPrice of service.timesWithPrices" (click)="service.selectedTime = timeWithPrice">{{
+            timeWithPrice.time }}</span> Минут
+                </div>
+                <div class="card__info-price">
+                    <span class="strikethrough">{{
+            service.selectedTime!.price * 1.2 | currency: "RUB":"symbol":"1.0"
+            }}</span>
+                    <span class="card__info-price-item">{{
+            service.selectedTime!.price | currency: "RUB":"symbol":"1.0"
+            }}</span>
+                </div>
+            </div>
+            <div class="button-wrapper">
+
+            </div>
+        </div>
     </ng-template>
     <ng-template swiperSlide>
         321

@@ -1,0 +1,28 @@
+:host::ng-deep {
+    @import "swiper/scss";
+    @import "swiper/scss/navigation";
+    @import "swiper/scss/pagination";
+    .swiper-button-prev:after {
+        content: "🠐";
+        font-size: 24px;
+        color: #282828;
+    }
+    .swiper-button-next:after {
+        content: "🠒";
+        font-size: 24px;
+        color: #282828;
+    }
+    .swiper {
+        box-shadow: 0 8px 20px 0 rgb(0 0 0 / 5%);
+    }
+}
+
+.service__card {
+    width: 100%;
+    max-width: 345px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: space-between;
+}

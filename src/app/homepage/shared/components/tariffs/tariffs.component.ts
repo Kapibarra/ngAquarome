@@ -9,15 +9,11 @@ SwiperCore.use([Navigation, Autoplay]);
 })
 export class TariffsComponent implements OnInit {
   config: SwiperOptions = {
-    slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 30,
     navigation: true,
     pagination: { clickable: true },
     scrollbar: { draggable: true },
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
+    
   };
   constructor() { }
 

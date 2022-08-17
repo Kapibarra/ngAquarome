@@ -1,5 +1,6 @@
 .date__picker-wrapper {
     display: block;
+    margin-bottom: 12px;
     & label {
         display: block;
         margin-bottom: 10px;
@@ -15,7 +16,7 @@
 .date__picker {
     display: flex;
     flex-direction: column;
-    max-width: 280px;
+    max-width: 303px;
     appearance: none;
     border: 1px solid rgba(38, 38, 38, .24);
     border-radius: 4px;

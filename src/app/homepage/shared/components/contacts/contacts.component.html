@@ -2,14 +2,23 @@
     <div class="contacts">
         <h2 class="contacts__title">Заявка на обслуживание</h2>
         <h3 class="contacts__subtitle">Перезвоним за 15 минут!</h3>
-        <form class="contacts__form">
-            <div class="form__control">
-                <input type="text" class="form__control-input" id="name" placeholder="Ваше имя">
+        <div class="form__wrapper">
+            <form class="contacts__form">
+                <div class="form__control">
+                    <input type="text" class="form__control-input" id="name" placeholder="Ваше имя">
+                </div>
+                <div class="form__control">
+                    <input type="text" class="form__control-input" id="name" placeholder="Ваш телефон">
+                </div>
+                <app-datepicker></app-datepicker>
+                <app-button-main [label]="'Отправить'" [class]="'primary'" type="submit"></app-button-main>
+                <p class="form__description">Консультация по телефону</p>
+                <p class="form__description-title">Бесплатно</p>
+            </form>
+            <div class="form__image">
+                <img src="">
             </div>
-            <div class="form__control">
-                <input type="text" class="form__control-input" id="name" placeholder="Ваш телефон">
-            </div>
-            <app-datepicker></app-datepicker>
-        </form>
+        </div>
+
     </div>
 </div>

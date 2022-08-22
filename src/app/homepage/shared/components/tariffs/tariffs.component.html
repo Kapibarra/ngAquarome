@@ -2,28 +2,22 @@
   clickable: true
 }">
     <ng-template swiperSlide>
-        <div class="service__card">
+        <div class="service__card" *ngFor="let service of service">
             <figure class="card__image">
-                <img class="card__image" [src]="service.image" (load)="service.imageLoad = true" [alt]="service.name" />
-                <figcaption *ngIf="service.popularity > 50" class="card__image-label">
-                    <div>Популярное 🔥</div>
-                </figcaption>
+                <img class="card__image" [src]="service.image" (load)="service.imageLoaded = true" [alt]="service.name" />
             </figure>
             <h3 class="card__title">{{ service.name }}</h3>
             <p class="card__subtitle" title="{{ service.description }}">
-                {{ service.description.length > 120 ? (service.description | slice: 0:120) + "..." : service.description }}
+                {{ service.description!.length > 120 ? (service.description | slice: 0:120) + "..." : service.description }}
             </p>
             <div class="card__info">
-                <div class="card__info-time">
-                    <span class="card__info-time-item" [ngClass]="{ active: service.selectedTime == timeWithPrice }" *ngFor="let timeWithPrice of service.timesWithPrices" (click)="service.selectedTime = timeWithPrice">{{
-            timeWithPrice.time }}</span> Минут
-                </div>
+
                 <div class="card__info-price">
                     <span class="strikethrough">{{
-            service.selectedTime!.price * 1.2 | currency: "RUB":"symbol":"1.0"
+            service.price! * 1.2 | currency: "RUB":"symbol":"1.0"
             }}</span>
                     <span class="card__info-price-item">{{
-            service.selectedTime!.price | currency: "RUB":"symbol":"1.0"
+            service.price | currency: "RUB":"symbol":"1.0"
             }}</span>
                 </div>
             </div>

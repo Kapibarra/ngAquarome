@@ -11,5 +11,8 @@ export class ContactsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  // onSubmitForm(formData) {
+  //   console.log(this.formData);
+    
+  // }
 }

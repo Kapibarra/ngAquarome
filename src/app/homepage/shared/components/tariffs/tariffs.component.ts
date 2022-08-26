@@ -24,7 +24,53 @@ export class TariffsComponent implements OnInit {
     image: 'assets/imgs/services/service01.png',
     imageLoaded: true,
     price:500
-  }]
+  },
+  {
+    id:2,
+    name: 'Обслуживание',
+    description: 'Разовый выезд специалиста',
+    fromPrice: 'от 1000 рублей',
+    image: 'assets/imgs/services/service01.png',
+    imageLoaded: true,
+    price:500
+  },
+  {
+    id:3,
+    name: 'Обслуживание',
+    description: 'Разовый выезд специалиста',
+    fromPrice: 'от 1000 рублей',
+    image: 'assets/imgs/services/service01.png',
+    imageLoaded: true,
+    price:500
+  },
+  {
+    id:4,
+    name: 'Обслуживание',
+    description: 'Разовый выезд специалиста',
+    fromPrice: 'от 1000 рублей',
+    image: 'assets/imgs/services/service01.png',
+    imageLoaded: true,
+    price:500
+  },
+  {
+    id:1,
+    name: 'Обслуживание',
+    description: 'Разовый выезд специалиста',
+    fromPrice: 'от 1000 рублей',
+    image: 'assets/imgs/services/service01.png',
+    imageLoaded: true,
+    price:500
+  },
+  {
+    id:1,
+    name: 'Обслуживание',
+    description: 'Разовый выезд специалиста',
+    fromPrice: 'от 1000 рублей',
+    image: 'assets/imgs/services/service01.png',
+    imageLoaded: true,
+    price:500
+  },
+]
   constructor() { }
 
   ngOnInit(): void {

@@ -4,20 +4,24 @@
         <h3 class="contacts__subtitle">Перезвоним за 15 минут!</h3>
         <div class="form__wrapper">
             <form class="contacts__form">
-                <div class="form__control">
-                    <input type="text" class="form__control-input" id="name" placeholder="Ваше имя">
+                <div class="form__inputs">
+                    <div class="form__control">
+                        <input type="text" class="form__control-input" id="name" placeholder="Ваше имя">
+                    </div>
+                    <div class="form__control">
+                        <input type="text" class="form__control-input" id="name" placeholder="Ваш телефон">
+                    </div>
+                    <app-datepicker></app-datepicker>
                 </div>
-                <div class="form__control">
-                    <input type="text" class="form__control-input" id="name" placeholder="Ваш телефон">
-                </div>
-                <app-datepicker></app-datepicker>
-                <div class="button__wrapper">
-                    <app-button-main [label]="'Отправить'" [class]="'primary'" type="submit"></app-button-main>
-                    <p class="private">Мы гарантируем безопасность ваших данных</p>
+                <div class="form__description-wrapper">
+                    <div class="button__wrapper">
+                        <app-button-main [label]="'Отправить'" [class]="'primary'" type="submit"></app-button-main>
+                        <p class="private">Мы гарантируем безопасность ваших данных</p>
+                    </div>
+                    <p class="form__description">Консультация по телефону</p>
+                    <p class="form__description-title">Бесплатно</p>
                 </div>
 
-                <p class="form__description">Консультация по телефону</p>
-                <p class="form__description-title">Бесплатно</p>
             </form>
             <div class="form__img">
                 <img src="assets/imgs/contacts.png">

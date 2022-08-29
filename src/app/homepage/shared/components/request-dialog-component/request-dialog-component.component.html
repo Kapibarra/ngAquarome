@@ -1,1 +1,21 @@
-<p>request-dialog-component works!123</p>
+<form class="request-contacts__form">
+    <div class="form__inputs">
+        <div class="form__control">
+            <input type="text" class="form__control-input" id="name" placeholder="Ваше имя">
+        </div>
+        <div class="form__control">
+            <input type="text" class="form__control-input" id="name" placeholder="Ваш телефон">
+        </div>
+        <app-datepicker></app-datepicker>
+    </div>
+    <div class="request-form__description-wrapper">
+        <div class="button__wrapper">
+            <app-button-main [label]="'Отправить'" [class]="'primary'" type="submit"></app-button-main>
+            <p class="private">Мы гарантируем безопасность ваших данных</p>
+        </div>
+    </div>
+</form>
+<div class="form__description">
+    <h3 class="form__description-title">Или позвоните нам по телефону</h3>
+    <app-button-secondary [label]="'+7 (999) 999 99 99'" [class]="'purple centered'"></app-button-secondary>
+</div>

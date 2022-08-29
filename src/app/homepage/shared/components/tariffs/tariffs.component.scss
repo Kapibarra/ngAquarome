@@ -84,6 +84,32 @@
         object-fit: cover;
         position: relative;
     }
+    & .card__title {
+        font-family: "Ubuntu";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 20px;
+        color: #282828;
+        margin-bottom: 10px;
+    }
+    & .card__subtitle {
+        font-family: "Ubuntu";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 15px;
+        color: #282828;
+        margin-bottom: 30px;
+    }
+    & .card__info {
+        & .card__info-price-item {
+            & .price-item {
+                color: #143D7B;
+                font-size: 21px;
+            }
+        }
+    }
 }
 
 .strikethrough {

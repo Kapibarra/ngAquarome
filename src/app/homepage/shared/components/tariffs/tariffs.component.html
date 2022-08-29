@@ -14,14 +14,12 @@
                         {{ service.description!.length > 120 ? (service.description | slice: 0:120) + "..." : service.description }}
                     </p>
                     <div class="card__info">
-
-                        <div class="card__info-price">
-                            <span class="strikethrough">{{
+                        <div class="card__info-price"><span class="strikethrough">{{
                       service.price! * 1.2 | currency: "RUB ":"symbol":"1.0"
                       }}</span>
-                            <span class="card__info-price-item">{{
-                      service.price | currency: "RUB ":"symbol":"1.0"
-                      }}</span>
+                            <span class="card__info-price-item">От <span class="price-item">{{
+                                service.price | currency: "RUB ":"symbol":"1.0"
+                                }}</span></span>
                         </div>
                     </div>
                     <div class="button-wrapper">
@@ -31,4 +29,5 @@
             </ng-template>
         </swiper>
     </div>
+
 </div>

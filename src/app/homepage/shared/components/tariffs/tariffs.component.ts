@@ -18,55 +18,55 @@ export class TariffsComponent implements OnInit {
   };
   service: Service[] = [{
     id:1,
-    name: 'Обслуживание',
+    name: 'Разовый выезд',
     description: 'Разовый выезд специалиста',
-    fromPrice: 'от 1000 рублей',
-    image: 'assets/imgs/services/service01.png',
+    fromPrice: 'от 2000 рублей',
+    image: 'assets/imgs/tariffs/tariffs01.jpeg',
     imageLoaded: true,
-    price:500
+    price:2000
   },
   {
     id:2,
-    name: 'Обслуживание',
+    name: 'Обслуживание аквариума',
     description: 'Разовый выезд специалиста',
     fromPrice: 'от 1000 рублей',
-    image: 'assets/imgs/services/service01.png',
+    image: 'assets/imgs/tariffs/tariffs02.jpg',
     imageLoaded: true,
     price:500
   },
   {
     id:3,
-    name: 'Обслуживание',
+    name: 'Переезд аквариума',
     description: 'Разовый выезд специалиста',
     fromPrice: 'от 1000 рублей',
-    image: 'assets/imgs/services/service01.png',
+    image: 'assets/imgs/tariffs/tariffs03.jpg',
     imageLoaded: true,
     price:500
   },
   {
     id:4,
-    name: 'Обслуживание',
+    name: 'Оформление аквариума',
     description: 'Разовый выезд специалиста',
     fromPrice: 'от 1000 рублей',
-    image: 'assets/imgs/services/service01.png',
+    image: 'assets/imgs/tariffs/tariffs04.jpg',
     imageLoaded: true,
     price:500
   },
   {
-    id:1,
-    name: 'Обслуживание',
+    id:5,
+    name: 'Ремонт аквариума',
     description: 'Разовый выезд специалиста',
     fromPrice: 'от 1000 рублей',
-    image: 'assets/imgs/services/service01.png',
+    image: 'assets/imgs/tariffs/tariffs05.jfif',
     imageLoaded: true,
     price:500
   },
   {
-    id:1,
-    name: 'Обслуживание',
+    id:6,
+    name: 'Сборка аквариума',
     description: 'Разовый выезд специалиста',
     fromPrice: 'от 1000 рублей',
-    image: 'assets/imgs/services/service01.png',
+    image: 'assets/imgs/tariffs/tariffs06.jpg',
     imageLoaded: true,
     price:500
   },

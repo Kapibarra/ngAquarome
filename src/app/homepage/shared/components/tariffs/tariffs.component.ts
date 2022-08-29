@@ -1,5 +1,5 @@
 import { Service } from './../../services';
-import SwiperCore, { SwiperOptions ,Navigation, Autoplay} from 'swiper';
+import SwiperCore, { SwiperOptions ,Navigation, Autoplay, Swiper} from 'swiper';
 import { Component, OnInit } from '@angular/core';
 // install Swiper modules
 SwiperCore.use([Navigation, Autoplay]);
@@ -14,6 +14,10 @@ export class TariffsComponent implements OnInit {
     navigation: true,
     pagination: { clickable: true },
     scrollbar: { draggable: true },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
     
   };
   service: Service[] = [{
@@ -75,5 +79,9 @@ export class TariffsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  setSwiperInstance(swiper: Swiper) {
+    setInterval(() => {
+      swiper.slideNext();
+    }, 3000);
+  }
 }

@@ -3,7 +3,7 @@
     <div class="tariffs">
         <swiper [slidesPerView]="2.5" [centeredSlides]="false" [spaceBetween]="30" [pagination]="{
             clickable: true
-          }">
+          }" (swiper)="setSwiperInstance($event)">
             <ng-template swiperSlide *ngFor="let service of service; index as bgcolor">
                 <div class="service__card">
                     <figure class="card__image">

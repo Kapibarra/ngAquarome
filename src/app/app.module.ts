@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { SwiperModule } from 'swiper/angular';
@@ -26,6 +27,7 @@ import { FooterComponent } from './homepage/shared/components/footer/footer.comp
 import { FormComponent } from './homepage/shared/components/form/form.component';
 import { DatepickerComponent } from './homepage/shared/components/datepicker/datepicker.component';
 import { TariffsComponent } from './homepage/shared/components/tariffs/tariffs.component';
+import { GalleryComponent } from './homepage/shared/components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,8 @@ import { TariffsComponent } from './homepage/shared/components/tariffs/tariffs.c
     FooterComponent,
     DatepickerComponent,
     FormComponent,
-    TariffsComponent
+    TariffsComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

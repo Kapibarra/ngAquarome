@@ -1,4 +1,3 @@
-
 import { ViewportScroller } from '@angular/common';
 import { Component, DoCheck, HostListener, OnInit } from '@angular/core';
 import { NavigationStart, Router } from '@angular/router';

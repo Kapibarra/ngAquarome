@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -6,10 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
-  constructor() { }
+  mobile: boolean = false;
+  constructor(private viewportscroller: ViewportScroller) { }
 
   ngOnInit(): void {
+    if (window.screen.width <= 968) {
+      // 768px portrait
+      this.mobile = true;
+    }
+  }
+  ngDoCheck() {
+    if (window.screen.width <= 968) {
+//resizeable
+      this.mobile = true;
+    }
+  }
+  @HostListener('window:scroll', ['$event']) // for window scroll events
+
+  onClickScroll(elementId: string):void {
+    this.viewportscroller.scrollToAnchor(elementId);
   }
 
 }

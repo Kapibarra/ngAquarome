@@ -1,1 +1,24 @@
-<p>footer works!</p>
+<div class="footer__wrapper">
+    <div class="footer">
+        <div class="footer__logo">
+            <img class="footer__logo-item" src="assets/imgs/logo.png" [routerLink]="['']" />
+        </div>
+        <div class="footer__nav">
+            <ul>
+                <li class="footer__navigation-item"><a [routerLink]="['']">Главная</a></li>
+                <li class="footer__navigation-item"><a (click)="onClickScroll('')">О нас</a></li>
+                <li class="footer__navigation-item"><a (click)="onClickScroll('')">Обслуживание</a></li>
+                <li class="footer__navigation-item"><a (click)="onClickScroll('')">Отзывы</a></li>
+                <li class="footer__navigation-item"><a (click)="onClickScroll('')">Услуги</a></li>
+                <li class="footer__navigation-item"><a (click)="onClickScroll('')">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="footer__contacts">
+            <ul>
+                <li class="footer__navigation-item"><a href="tel:+79999999999">+7 (999) 999 99 99</a></li>
+                <li class="footer__navigation-item"><a href="mailto:mail@mail.ru">mail@mail.ru</a></li>
+                <li class="footer__navigation-item"><a href="https://novikovweb.ru">Created by NovikovWeb</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

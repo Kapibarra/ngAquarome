@@ -31,6 +31,8 @@ import { FormComponent } from './homepage/shared/components/form/form.component'
 import { DatepickerComponent } from './homepage/shared/components/datepicker/datepicker.component';
 import { TariffsComponent } from './homepage/shared/components/tariffs/tariffs.component';
 import { GalleryComponent } from './homepage/shared/components/gallery/gallery.component';
+import { FaqComponent } from './homepage/shared/components/faq/faq.component';
+import { FaqItemComponent } from './homepage/shared/components/faq/faq-item/faq-item.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { GalleryComponent } from './homepage/shared/components/gallery/gallery.c
     DatepickerComponent,
     FormComponent,
     TariffsComponent,
-    GalleryComponent
+    GalleryComponent,
+    FaqComponent,
+    FaqItemComponent
   ],
   imports: [
     BrowserModule,

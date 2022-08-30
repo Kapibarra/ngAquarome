@@ -24,7 +24,7 @@ import { Component, Input, OnInit } from '@angular/core';
 transform: 'rotate(0)'
       })),
       state('rotated' ,style({
-        transform: 'rotate(45deg)'
+        transform: 'rotate(90deg)'
       })),
       transition('default<=>rotated', animate('250ms'))
     ])

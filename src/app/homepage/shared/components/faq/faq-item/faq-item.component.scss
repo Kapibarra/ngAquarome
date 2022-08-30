@@ -1,5 +1,5 @@
 .acc-header {
-    border-top: 1px solid #D5D5D5;
+    border-top: 1px solid #70b2eb;
     min-height: 30px;
     cursor: pointer;
     display: flex;
@@ -9,20 +9,25 @@
 }
 
 .header__title {
-    width: 100%;
-    font-weight: 300;
-    letter-spacing: 1.5px;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #777777;
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 20px;
+    color: #282828;
+    margin-bottom: 10px;
 }
 
 .body {
-    display: flex;
-    padding-bottom: 25px;
-    font-size: 14px;
-    letter-spacing: 1.5px;
-    line-height: 27px;
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 15px;
     color: #282828;
-    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.accordion__icon {
+    margin-left: 10px;
 }

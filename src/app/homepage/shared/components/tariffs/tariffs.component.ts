@@ -82,6 +82,6 @@ export class TariffsComponent implements OnInit {
   setSwiperInstance(swiper: Swiper) {
     setInterval(() => {
       swiper.slideNext();
-    }, 3000);
+    }, 10000);
   }
 }

@@ -6,7 +6,7 @@
                 <h3 class="servies__card-title">{{service.name}}</h3>
                 <p class="servies__card-subtitle">{{service.description}}</p>
                 <p class="servies__card-price">От <span class="price-font">{{service.fromPrice}}</span> рублей в месяц</p>
-                <a class="services__card-price-link" [routerLink]="['price']">Все услуги <img src="assets/imgs/icons/Forward.png"></a>
+                <a class="services__card-price-link" (click)="onClickScroll('tariffs')">Все услуги <img src="assets/imgs/icons/Forward.png"></a>
             </div>
             <div class="card__image">
                 <img src="{{service.image}}">

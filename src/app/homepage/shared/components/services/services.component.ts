@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Service } from './../../services';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -38,11 +39,13 @@ services: Service[] = [
     image:'assets/imgs/services/service04.png'
   },
 ];
-  constructor() { }
+  constructor(private viewportscroller: ViewportScroller) { }
 
   ngOnInit(): void {
 // this.services$ = this.ServicesService.getServices()
   }
 
-  
+  onClickScroll(elementId: string):void {
+    this.viewportscroller.scrollToAnchor(elementId);
+  }
 }

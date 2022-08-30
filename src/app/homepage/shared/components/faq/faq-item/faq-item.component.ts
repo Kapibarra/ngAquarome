@@ -32,7 +32,7 @@ transform: 'rotate(0)'
 })
 export class FaqItemComponent implements OnInit {
 
-@Input() title: string = 'test title'
+@Input() title: string = 'default'
 showBody = false
 
   constructor() { }

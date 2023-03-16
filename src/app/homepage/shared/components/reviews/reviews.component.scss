@@ -1,86 +1,101 @@
 .reviews__wrapper {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    & .reviews__title {
-        font-family: 'Ubuntu';
-        margin-top: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  & .reviews__title {
+    font-family: "Ubuntu";
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+  }
+  & .reviews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    & .reviews__card {
+      background: #ffffff;
+      box-shadow: 0px 0px 30px rgba(48, 54, 77, 0.1);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 32px 24px;
+      gap: 24px;
+      width: 100%;
+      max-width: 488px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      & .reviews__card-title {
+        font-family: "Ubuntu";
         font-style: normal;
         font-weight: 400;
-        font-size: 32px;
-        line-height: 37px;
-    }
-    & .reviews {
+        font-size: 22px;
+        line-height: 34px;
+        color: #282828;
+      }
+      & .reviews__card-overall {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap-reverse;
+        flex-wrap: nowrap;
+        width: 100%;
+        max-width: 250px;
         justify-content: space-between;
-        & .reviews__card {
-            background: #FFFFFF;
-            box-shadow: 0px 0px 30px rgba(48, 54, 77, 0.1);
-            border-radius: 8px;
+        align-items: center;
+        padding: 16px 32px;
+        gap: 7px;
+        background: #f6fafb;
+        /*secondary/gray-100*/
+        border: 1px solid #f0f0f0;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+      }
+      & .reviews__card-client {
+        & .card__client-card {
+          justify-content: space-between;
+          display: flex;
+          width: 320px;
+          box-sizing: border-box;
+          padding: 16px;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: center;
+          border-top: 1px solid #e2f9ff;
+          & .client__card-name {
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            flex-wrap: nowrap;
+            align-items: center;
+            & .card__name-img {
+              padding-right: 10px;
+            }
+          }
+          & .client__card-stars {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+          }
+          & .card__name-title {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 32px 24px;
-            gap: 24px;
-            width: 100%;
-            max-width: 488px;
-            -webkit-border-radius: 8px;
-            -moz-border-radius: 8px;
-            -ms-border-radius: 8px;
-            -o-border-radius: 8px;
-            & .reviews__card-title {
-                font-family: 'Ubuntu';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 22px;
-                line-height: 34px;
-                color: #282828;
+            gap: 3px;
+            & p {
+              opacity: 0.8;
             }
-            & .reviews__card-overall {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                width: 100%;
-                max-width: 250px;
-                justify-content: space-between;
-                align-items: center;
-                padding: 16px 32px;
-                gap: 7px;
-                background: #F6FAFB;
-                /*secondary/gray-100*/
-                border: 1px solid #F0F0F0;
-                border-radius: 8px;
-                -webkit-border-radius: 8px;
-                -moz-border-radius: 8px;
-                -ms-border-radius: 8px;
-                -o-border-radius: 8px;
-            }
-            & .reviews__card-client {
-                & .card__client-card {
-                    justify-content: space-between;
-                    display: flex;
-                    width: 320px;
-                    box-sizing: border-box;
-                    padding: 16px;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                    align-items: center;
-                    border-top: 1px solid #e2f9ff;
-                    & .client__card-name {
-                        justify-content: space-between;
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: nowrap;
-                        align-items: center;
-                        & .card__name-img {
-                            padding-right: 10px;
-                        }
-                    }
-                }
-            }
+          }
         }
+      }
     }
+  }
 }

@@ -1,33 +1,64 @@
 <div class="contacts__wrapper" id="contacts">
-    <div class="contacts">
-        <h2 class="contacts__title">Заявка на обслуживание</h2>
-        <h3 class="contacts__subtitle">Перезвоним за 15 минут!</h3>
-        <div class="form__wrapper">
-            <form class="contacts__form">
-                <div class="form__inputs">
-                    <div class="form__control">
-                        <input type="text" class="form__control-input" id="name" placeholder="Ваше имя">
-                    </div>
-                    <div class="form__control">
-                        <input type="text" class="form__control-input" id="name" placeholder="Ваш телефон">
-                    </div>
-                    <app-datepicker></app-datepicker>
-                </div>
-                <div class="form__description-wrapper">
-                    <div class="button__wrapper">
-                        <app-button-main [label]="'Отправить'" [class]="'primary'" type="submit"></app-button-main>
-                        <p class="private">Мы гарантируем безопасность ваших данных</p>
-                    </div>
-
-                </div>
-
-            </form>
-            <div class="form__img">
-
-                <img src="assets/imgs/contacts.png">
-                <p class="form__description">Консультация по телефону</p>
-                <p class="form__description-title">Бесплатно</p>
-            </div>
+  <div class="contacts">
+    <h2 class="contacts__title">Заявка на обслуживание</h2>
+    <h3 class="contacts__subtitle">Перезвоним за 15 минут!</h3>
+    <div class="form__wrapper">
+      <!-- <div class="form__control">
+          <input
+            type="text"
+            class="form__control-input"
+            id="name"
+            placeholder="Ваше имя"
+            required
+          />
         </div>
+        <div class="form__control">
+          <input
+            type="text"
+            class="form__control-input"
+            id="name"
+            placeholder="Ваш телефон"
+            required
+          />
+        </div> -->
+      <form
+        id="my-form"
+        (ngSubmit)="handleSubmit()"
+        #form="ngForm"
+        class="contacts__form"
+      >
+        <div class="form__inputs">
+          <input
+            type="email"
+            name="email"
+            placeholder="Ваше имя"
+            [(ngModel)]="email"
+            required
+            class="form__control-input"
+          />
+          <input
+            name="name"
+            placeholder="Ваш телефон"
+            [(ngModel)]="name"
+            required
+            class="form__control-input"
+          />
+        </div>
+        <div class="button__wrapper">
+          <button type="submit" [class]="'primary'" [disabled]="form.invalid">
+            Submit
+          </button>
+          <p class="private">Мы гарантируем безопасность ваших данных</p>
+        </div>
+        <p *ngIf="status">{{ status }}</p>
+      </form>
+      <!-- <app-datepicker></app-datepicker> -->
+
+      <div class="form__img">
+        <img src="assets/imgs/contacts.png" />
+        <p class="form__description">Консультация по телефону</p>
+        <p class="form__description-title">Бесплатно</p>
+      </div>
     </div>
+  </div>
 </div>

@@ -1,34 +1,40 @@
 <div class="reviews__wrapper" id="reviews">
-    <h1 class="reviews__title">Отзывы</h1>
-    <div class="reviews">
-        <div class="reviews__img">
-            <img src="assets/imgs/reviews/reviewsimg.png">
-        </div>
-        <div class="reviews__card">
-            <h3 class="reviews__card-title">
-                Нас ценят наши клиенты!
-            </h3>
-            <div class="reviews__card-overall">
-                <div class="card__overall-stars">
-                    <img src="assets/imgs/reviews/starfull.png" *ngFor="let i of [0,1,2,3]">
-                    <img src="assets/imgs/reviews/starhalf.png">
-                </div>
-                <div class="card__overall-title">4.7 из 49 оценок</div>
-            </div>
-            <div class="reviews__card-client">
-                <div class="card__client-card" *ngFor="let client of Review">
-                    <div class="client__card-name">
-                        <div class="card__name-img"><img [src]="client.photo"></div>
-                        <div class="card__name-title">
-                            <h3>{{client.name}}</h3>
-                            <p>{{client.client}}</p>
-                        </div>
-                    </div>
-                    <div class="client__card-stars">
-                        <img src="assets/imgs/reviews/starfull.png" *ngFor="let i of [0,1,2,3,4]">
-                    </div>
-                </div>
-            </div>
-        </div>
+  <h1 class="reviews__title">Отзывы</h1>
+  <div class="reviews">
+    <div class="reviews__img">
+      <img src="assets/imgs/reviews/reviewsimg.png" />
     </div>
+    <div class="reviews__card">
+      <h3 class="reviews__card-title">Нас ценят наши клиенты!</h3>
+      <div class="reviews__card-overall">
+        <div class="card__overall-stars">
+          <img
+            src="assets/imgs/reviews/starfull.png"
+            *ngFor="let i of [0, 1, 2, 3]"
+          />
+          <img src="assets/imgs/reviews/starhalf.png" />
+        </div>
+        <div class="card__overall-title">4.7 из 49 оценок</div>
+      </div>
+      <div class="reviews__card-client">
+        <div class="card__client-card" *ngFor="let client of Review">
+          <div class="client__card-name">
+            <div class="card__name-img">
+              <img [src]="client.photo" width="25px" height="25px" />
+            </div>
+            <div class="card__name-title">
+              <h3>{{ client.name }}</h3>
+              <p>{{ client.client }}</p>
+            </div>
+          </div>
+          <div class="client__card-stars">
+            <img
+              src="assets/imgs/reviews/starfull.png"
+              *ngFor="let i of [0, 1, 2, 3, 4]"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

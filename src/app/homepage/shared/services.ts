@@ -1,12 +1,11 @@
-
 export class Service {
-    id?:number;
-    name?: string;
-    description?: string;
-    fromPrice?: string;
-    image?: string;
-    imageLoaded?: boolean = false;
-    price?:number
+  id?: number;
+  name?: string;
+  description?: string;
+  fromPrice?: string;
+  image?: string;
+  imageLoaded?: boolean = false;
+  price?: number;
   constructor(service: Service) {
     this.id = service.id;
     this.name = service.name;

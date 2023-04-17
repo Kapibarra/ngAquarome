@@ -28,7 +28,7 @@ export class TariffsComponent implements OnInit {
     {
       id: 1,
       name: 'Разовый выезд',
-      description: 'Разовый выезд специалиста',
+      description: 'Разовый выезд специалиста по Вашему адресу',
       fromPrice: 'от 2000 рублей',
       image: 'assets/imgs/tariffs/tariffs01.jpeg',
       imageLoaded: true,
@@ -37,7 +37,7 @@ export class TariffsComponent implements OnInit {
     {
       id: 2,
       name: 'Обслуживание аквариума',
-      description: 'Разовый выезд специалиста',
+      description: 'Регулярное обслуживание аквариумов от двух раз в месяц',
       fromPrice: 'от 2000 рублей',
       image: 'assets/imgs/tariffs/tariffs02.jpg',
       imageLoaded: true,
@@ -46,7 +46,8 @@ export class TariffsComponent implements OnInit {
     {
       id: 3,
       name: 'Переезд аквариума',
-      description: 'Разовый выезд специалиста',
+      description:
+        'Перевезем Ваш аквариум и всех его обитателей на новое место',
       fromPrice: 'от 2400 рублей',
       image: 'assets/imgs/tariffs/tariffs03.jpg',
       imageLoaded: true,
@@ -55,7 +56,8 @@ export class TariffsComponent implements OnInit {
     {
       id: 4,
       name: 'Оформление аквариума',
-      description: 'Разовый выезд специалиста',
+      description:
+        'Профессиональное декорирование аквариумов. Подбор растений и декора.',
       fromPrice: 'от 10000 рублей',
       image: 'assets/imgs/tariffs/tariffs04.jpg',
       imageLoaded: true,
@@ -64,7 +66,7 @@ export class TariffsComponent implements OnInit {
     {
       id: 5,
       name: 'Ремонт аквариума',
-      description: 'Разовый выезд специалиста',
+      description: 'Устраняем протечки. Ремонтируем аквариумное оборудование.',
       fromPrice: 'от 1000 рублей',
       image: 'assets/imgs/tariffs/tariffs05.jfif',
       imageLoaded: true,
@@ -73,7 +75,7 @@ export class TariffsComponent implements OnInit {
     {
       id: 6,
       name: 'Сборка аквариума',
-      description: 'Разовый выезд специалиста',
+      description: 'Сборка аквариумов под заказ по Вашим параметрам',
       fromPrice: 'от 3000 рублей',
       image: 'assets/imgs/tariffs/tariffs06.jpg',
       imageLoaded: true,

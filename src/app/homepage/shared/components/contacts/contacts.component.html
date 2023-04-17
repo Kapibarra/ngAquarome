@@ -23,21 +23,22 @@
         </div> -->
       <form
         id="my-form"
-        (ngSubmit)="handleSubmit()"
+        method="post"
+        action="https://formspree.io/f/xqkoloke"
         #form="ngForm"
         class="contacts__form"
       >
         <div class="form__inputs">
           <input
-            type="email"
-            name="email"
+            type="text"
+            name="name"
             placeholder="Ваше имя"
             [(ngModel)]="email"
             required
             class="form__control-input"
           />
           <input
-            name="name"
+            name="phone"
             placeholder="Ваш телефон"
             [(ngModel)]="name"
             required
@@ -45,8 +46,8 @@
           />
         </div>
         <div class="button__wrapper">
-          <button type="submit" [class]="'primary'" [disabled]="form.invalid">
-            Submit
+          <button type="submit" class="primary" [disabled]="form.invalid">
+            Отправить
           </button>
           <p class="private">Мы гарантируем безопасность ваших данных</p>
         </div>
@@ -56,8 +57,6 @@
 
       <div class="form__img">
         <img src="assets/imgs/contacts.png" />
-        <p class="form__description">Консультация по телефону</p>
-        <p class="form__description-title">Бесплатно</p>
       </div>
     </div>
   </div>

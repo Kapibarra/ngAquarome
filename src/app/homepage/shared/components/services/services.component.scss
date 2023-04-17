@@ -1,152 +1,153 @@
 .services__wrapper {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    & .services__title {
-        font-family: "Ubuntu";
-        margin-top: 40px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 37px;
-    }
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  & .services__title {
+    font-family: "Ubuntu";
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+  }
 }
 
 .price-font {
-    color: #143D7B;
-    font-size: 21px;
+  color: #143d7b;
+  font-size: 21px;
 }
 
 .color0 {
-    background: #ffffff;
+  background: #ffffff;
 }
 
 .color1 {
-    background: #F3F6FD;
+  background: #f3f6fd;
 }
 
 .color2 {
-    background: #EFFCF0;
+  background: #effcf0;
 }
 
 .color3 {
-    background: rgba(179, 187, 230, 0.3);
+  background: rgba(179, 187, 230, 0.3);
 }
 
 .services {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  & .services__card {
     width: 100%;
-    max-width: 1180px;
-    margin: 0 auto;
-    margin-top: 40px;
+    min-height: 240px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    & .services__card {
-        width: 100%;
-        min-height: 240px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        max-width: 540px;
+
+    max-width: 540px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: 1px solid rgba(206, 209, 213, 0.4);
+    box-shadow: 0 8px 20px 0 rgb(0 0 0 / 5%);
+    transition: all 250ms ease-in-out;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    & .card__description {
+      width: 100%;
+      max-width: 266px;
+      margin-right: 5px;
+      & .servies__card-title {
+        font-family: "Ubuntu";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 20px;
+        color: #282828;
+        margin-bottom: 10px;
+      }
+      & .servies__card-subtitle {
+        font-family: "Ubuntu";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 15px;
+        color: #282828;
         margin-bottom: 30px;
-        padding: 15px;
-        border-radius: 8px;
-        -webkit-border-radius: 8px;
-        -moz-border-radius: 8px;
-        -ms-border-radius: 8px;
-        -o-border-radius: 8px;
-        border: 1px solid rgba(206, 209, 213, .4);
-        box-shadow: 0 8px 20px 0 rgb(0 0 0 / 5%);
+      }
+      & .servies__card-price {
+        margin-top: 40px;
+      }
+      & .services__card-price-link {
+        display: flex;
+        max-width: 100px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: 80px;
+        color: #537cc2;
+        border-bottom: 1px solid rgba(#537cc2, 0);
         transition: all 250ms ease-in-out;
         -webkit-transition: all 250ms ease-in-out;
         -moz-transition: all 250ms ease-in-out;
         -ms-transition: all 250ms ease-in-out;
         -o-transition: all 250ms ease-in-out;
-        & .card__description {
-            width: 100%;
-            max-width: 266px;
-            margin-right: 5px;
-            & .servies__card-title {
-                font-family: 'Ubuntu';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 21px;
-                line-height: 20px;
-                color: #282828;
-                margin-bottom: 10px;
-            }
-            & .servies__card-subtitle {
-                font-family: 'Ubuntu';
-                font-style: normal;
-                font-weight: 300;
-                font-size: 17px;
-                line-height: 15px;
-                color: #282828;
-                margin-bottom: 30px;
-            }
-            & .servies__card-price {
-                margin-top: 40px;
-            }
-            & .services__card-price-link {
-                display: flex;
-                max-width: 100px;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                align-items: center;
-                margin-top: 80px;
-                color: #537CC2;
-                border-bottom: 1px solid rgba(#537CC2, 0);
-                transition: all 250ms ease-in-out;
-                -webkit-transition: all 250ms ease-in-out;
-                -moz-transition: all 250ms ease-in-out;
-                -ms-transition: all 250ms ease-in-out;
-                -o-transition: all 250ms ease-in-out;
-                text-decoration: none;
-                & img {
-                    transform: translateX(10px);
-                    -webkit-transform: translateX(10px);
-                    -moz-transform: translateX(10px);
-                    -ms-transform: translateX(10px);
-                    -o-transform: translateX(10px);
-                    transition: all 250ms ease-in-out;
-                    -webkit-transition: all 250ms ease-in-out;
-                    -moz-transition: all 250ms ease-in-out;
-                    -ms-transition: all 250ms ease-in-out;
-                    -o-transition: all 250ms ease-in-out;
-                }
-                &:hover {
-                    border-bottom: 1px solid rgba(#537CC2, 1);
-                    transition: all 250ms ease-in-out;
-                    -webkit-transition: all 250ms ease-in-out;
-                    -moz-transition: all 250ms ease-in-out;
-                    -ms-transition: all 250ms ease-in-out;
-                    -o-transition: all 250ms ease-in-out;
-                    cursor: pointer;
-                    & img {
-                        transform: translateX(20px);
-                        -webkit-transform: translateX(20px);
-                        -moz-transform: translateX(20px);
-                        -ms-transform: translateX(20px);
-                        -o-transform: translateX(20px);
-                        transition: all 250ms ease-in-out;
-                        -webkit-transition: all 250ms ease-in-out;
-                        -moz-transition: all 250ms ease-in-out;
-                        -ms-transition: all 250ms ease-in-out;
-                        -o-transition: all 250ms ease-in-out;
-                    }
-                }
-            }
+        text-decoration: none;
+        & img {
+          transform: translateX(10px);
+          -webkit-transform: translateX(10px);
+          -moz-transform: translateX(10px);
+          -ms-transform: translateX(10px);
+          -o-transform: translateX(10px);
+          transition: all 250ms ease-in-out;
+          -webkit-transition: all 250ms ease-in-out;
+          -moz-transition: all 250ms ease-in-out;
+          -ms-transition: all 250ms ease-in-out;
+          -o-transition: all 250ms ease-in-out;
         }
         &:hover {
-            cursor: pointer;
+          border-bottom: 1px solid rgba(#537cc2, 1);
+          transition: all 250ms ease-in-out;
+          -webkit-transition: all 250ms ease-in-out;
+          -moz-transition: all 250ms ease-in-out;
+          -ms-transition: all 250ms ease-in-out;
+          -o-transition: all 250ms ease-in-out;
+          cursor: pointer;
+          & img {
+            transform: translateX(20px);
+            -webkit-transform: translateX(20px);
+            -moz-transform: translateX(20px);
+            -ms-transform: translateX(20px);
+            -o-transform: translateX(20px);
             transition: all 250ms ease-in-out;
             -webkit-transition: all 250ms ease-in-out;
             -moz-transition: all 250ms ease-in-out;
             -ms-transition: all 250ms ease-in-out;
             -o-transition: all 250ms ease-in-out;
-            box-shadow: 0 12px 32px 0 rgb(0 0 0 / 8%);
+          }
         }
+      }
     }
+    &:hover {
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+      -webkit-transition: all 250ms ease-in-out;
+      -moz-transition: all 250ms ease-in-out;
+      -ms-transition: all 250ms ease-in-out;
+      -o-transition: all 250ms ease-in-out;
+      box-shadow: 0 12px 32px 0 rgb(0 0 0 / 8%);
+    }
+  }
 }

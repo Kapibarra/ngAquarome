@@ -1,24 +1,46 @@
 <div class="footer__wrapper">
-    <div class="footer">
-        <div class="footer__logo">
-            <img class="footer__logo-item" src="assets/imgs/logo.png" [routerLink]="['']" />
-        </div>
-        <div class="footer__nav">
-            <ul>
-                <li class="footer__navigation-item"><a (click)="onClickScroll('main')">Главная</a></li>
-                <li class="footer__navigation-item"><a (click)="onClickScroll('reasonsabout')">О нас</a></li>
-                <li class="footer__navigation-item"><a (click)="onClickScroll('services')">Обслуживание</a></li>
-                <li class="footer__navigation-item"><a (click)="onClickScroll('reviews')">Отзывы</a></li>
-                <li class="footer__navigation-item"><a (click)="onClickScroll('tariffs')">Услуги</a></li>
-                <li class="footer__navigation-item"><a (click)="onClickScroll('contacts')">Контакты</a></li>
-            </ul>
-        </div>
-        <div class="footer__contacts">
-            <ul>
-                <li class="footer__navigation-item"><a href="tel:+79312622345">+7 (931) 262-23-45</a></li>
-                <li class="footer__navigation-item"><a href="mailto:miheff@mail.ru">miheff@mail.ru</a></li>
-                <li class="footer__navigation-item"><a href="https://novikovweb.ru">Created by NovikovWeb</a></li>
-            </ul>
-        </div>
+  <div class="footer">
+    <div class="footer__logo">
+      <img
+        class="footer__logo-item"
+        src="assets/imgs/logo.png"
+        [routerLink]="['']"
+      />
     </div>
+    <div class="footer__nav">
+      <ul>
+        <li class="footer__navigation-item">
+          <a (click)="onClickScroll('main')">Главная</a>
+        </li>
+        <li class="footer__navigation-item">
+          <a (click)="onClickScroll('reasonsabout')">О нас</a>
+        </li>
+        <li class="footer__navigation-item">
+          <a (click)="onClickScroll('services')">Обслуживание</a>
+        </li>
+        <li class="footer__navigation-item">
+          <a (click)="onClickScroll('reviews')">Отзывы</a>
+        </li>
+        <li class="footer__navigation-item">
+          <a (click)="onClickScroll('tariffs')">Услуги</a>
+        </li>
+        <li class="footer__navigation-item">
+          <a (click)="onClickScroll('contacts')">Контакты</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__contacts">
+      <ul>
+        <li class="footer__navigation-item">
+          <a href="tel:+79312622345">+7 (931) 262-23-45</a>
+        </li>
+        <li class="footer__navigation-item">
+          <a href="mailto:miheff@mail.ru">miheff@mail.ru</a>
+        </li>
+        <li class="footer__navigation-item">
+          <a href="https://novikovstudio.ru">Created by NovikovStudio</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>

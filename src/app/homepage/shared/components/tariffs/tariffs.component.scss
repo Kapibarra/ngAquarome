@@ -1,134 +1,136 @@
 :host::ng-deep {
-    @import "swiper/scss";
-    @import "swiper/scss/navigation";
-    @import "swiper/scss/pagination";
-    .swiper-button-prev:after {
-        content: "🠐";
-        font-size: 24px;
-        color: #282828;
-    }
-    .swiper-button-next:after {
-        content: "🠒";
-        font-size: 24px;
-        color: #282828;
-    }
-    .swiper {
-        width: 100%;
-        height: 100%;
-    }
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-    .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+  @import "swiper/scss";
+  @import "swiper/scss/navigation";
+  @import "swiper/scss/pagination";
+  .swiper-button-prev:after {
+    content: "🠐";
+    font-size: 24px;
+    color: #282828;
+  }
+  .swiper-button-next:after {
+    content: "🠒";
+    font-size: 24px;
+    color: #282828;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .color0 {
-    background: #ffffff;
+  background: #ffffff;
 }
 
 .color1 {
-    background: #F3F6FD;
+  background: #f3f6fd;
 }
 
 .color2 {
-    background: #EFFCF0;
+  background: #effcf0;
 }
 
 .color3 {
-    background: rgba(179, 187, 230, 0.3);
+  background: rgba(179, 187, 230, 0.3);
 }
 
 .tariffs__wrapper {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    & .tariffs__title {
-        font-family: "Ubuntu";
-        margin-top: 40px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 37px;
-        margin-bottom: 10px;
-    }
-    & .tariffs {
-        box-sizing: border-box;
-    }
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  & .tariffs__title {
+    font-family: "Ubuntu";
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 10px;
+  }
+  & .tariffs {
+    box-sizing: border-box;
+  }
 }
 
 .service__card {
+  width: 100%;
+  max-width: 345px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px 0 rgb(0 0 0 / 5%);
+  padding: 20px;
+  margin: 15px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  & .card__image {
+    border-radius: 20px;
     width: 100%;
-    max-width: 345px;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    justify-content: space-between;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px 0 rgb(0 0 0 / 5%);
-    padding: 20px;
-    margin: 15px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    & .card__image {
-        border-radius: 20px;
-        width: 100%;
-        height: 240px;
-        object-fit: cover;
-        position: relative;
-    }
-    & .card__title {
-        font-family: "Ubuntu";
-        font-style: normal;
-        font-weight: 400;
+    height: 240px;
+    object-fit: cover;
+    position: relative;
+  }
+  & .card__title {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 20px;
+    color: #282828;
+    margin-bottom: 10px;
+  }
+  & .card__subtitle {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 15px;
+    color: #282828;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  & .card__info {
+    & .card__info-price-item {
+      & .price-item {
+        color: #143d7b;
         font-size: 21px;
-        line-height: 20px;
-        color: #282828;
-        margin-bottom: 10px;
+      }
     }
-    & .card__subtitle {
-        font-family: "Ubuntu";
-        font-style: normal;
-        font-weight: 300;
-        font-size: 17px;
-        line-height: 15px;
-        color: #282828;
-        margin-bottom: 30px;
-    }
-    & .card__info {
-        & .card__info-price-item {
-            & .price-item {
-                color: #143D7B;
-                font-size: 21px;
-            }
-        }
-    }
+  }
 }
 
 .strikethrough {
-    text-decoration: line-through;
-    color: #6d6d6d;
-    margin-right: 10px;
+  text-decoration: line-through;
+  color: #6d6d6d;
+  margin-right: 10px;
 }

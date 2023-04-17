@@ -1,4 +1,8 @@
-<form class="request-contacts__form" method="post" action="">
+<form
+  class="request-contacts__form"
+  method="post"
+  action="https://formspree.io/f/xqkoloke"
+>
   <div class="form__inputs">
     <div class="form__control">
       <input
@@ -6,6 +10,7 @@
         class="form__control-input"
         id="name"
         placeholder="Ваше имя"
+        name="name"
       />
     </div>
     <div class="form__control">
@@ -14,26 +19,24 @@
         class="form__control-input"
         id="name"
         placeholder="Ваш телефон"
+        name="phone"
       />
     </div>
-    <app-datepicker></app-datepicker>
+    <!-- <app-datepicker></app-datepicker> -->
   </div>
   <div class="request-form__description-wrapper">
     <div class="button__wrapper">
-      <app-button-main
-        [label]="'Отправить'"
-        [class]="'primary'"
-        type="submit"
-      ></app-button-main>
+      <button class="primary" type="submit">Отправить</button>
       <p class="private">Мы гарантируем безопасность ваших данных</p>
     </div>
   </div>
 </form>
 <div class="form__description">
   <h3 class="form__description-title">Или позвоните нам по телефону</h3>
+  <!-- <a href="tel:+79312622345">+7 (931) 262-23-45</a> -->
   <app-button-secondary
-    href="tel:+79999999999"
-    [label]="'+7 (999) 999 99 99'"
+    href="tel:+79312622345"
+    [label]="'Позвонить Нам'"
     [class]="'purple centered'"
   ></app-button-secondary>
 </div>

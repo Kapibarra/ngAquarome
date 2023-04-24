@@ -3,43 +3,24 @@
     <h2 class="contacts__title">Заявка на обслуживание</h2>
     <h3 class="contacts__subtitle">Перезвоним за 15 минут!</h3>
     <div class="form__wrapper">
-      <!-- <div class="form__control">
-          <input
-            type="text"
-            class="form__control-input"
-            id="name"
-            placeholder="Ваше имя"
-            required
-          />
-        </div>
-        <div class="form__control">
-          <input
-            type="text"
-            class="form__control-input"
-            id="name"
-            placeholder="Ваш телефон"
-            required
-          />
-        </div> -->
       <form
         id="my-form"
-        method="post"
-        action="https://formspree.io/f/xqkoloke"
         #form="ngForm"
         class="contacts__form"
+        (submit)="handleSubmit()"
       >
         <div class="form__inputs">
           <input
             type="text"
-            name="name"
-            placeholder="Ваше имя"
-            [(ngModel)]="email"
+            name="phone"
+            placeholder="Ваш Телефон"
+            [(ngModel)]="phone"
             required
             class="form__control-input"
           />
           <input
-            name="phone"
-            placeholder="Ваш телефон"
+            name="name"
+            placeholder="Ваше имя"
             [(ngModel)]="name"
             required
             class="form__control-input"
@@ -51,7 +32,7 @@
           </button>
           <p class="private">Мы гарантируем безопасность ваших данных</p>
         </div>
-        <p *ngIf="status">{{ status }}</p>
+        <p class="status" *ngIf="status">{{ status }}</p>
       </form>
       <!-- <app-datepicker></app-datepicker> -->
 

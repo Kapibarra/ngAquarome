@@ -6,21 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contacts.component.scss'],
 })
 export class ContactsComponent implements OnInit {
-  email: string = '';
+  phone: string = '';
   name: string = '';
   status: string = '';
   error: any;
+
   constructor() {}
 
   ngOnInit(): void {}
-  // onSubmitForm(formData) {
-  //   console.log(this.formData);
 
-  // }
   handleSubmit() {
     const formData = new FormData();
-    formData.append('email', this.email);
-    formData.append('message', this.name);
+    formData.append('phone', this.phone);
+    formData.append('name', this.name);
 
     fetch('https://formspree.io/f/xqkoloke', {
       method: 'POST',
@@ -31,8 +29,8 @@ export class ContactsComponent implements OnInit {
     })
       .then((response) => {
         if (response.ok) {
-          this.status = 'Thanks for your submission!';
-          this.email = '';
+          this.status = 'Ваша заявка успешно отправлена!';
+          this.phone = '';
           this.name = '';
         } else {
           response.json().then((data) => {
@@ -41,13 +39,13 @@ export class ContactsComponent implements OnInit {
                 .map((error: Error) => error.message)
                 .join(', ');
             } else {
-              this.status = 'Oops! There was a problem submitting your form';
+              this.status = 'Упс... Что то пошло не так';
             }
           });
         }
       })
       .catch((error) => {
-        this.status = 'Oops! There was a problem submitting your form';
+        this.status = 'Ошибка';
       });
   }
 }

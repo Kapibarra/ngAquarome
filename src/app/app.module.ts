@@ -4,10 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { SwiperModule } from 'swiper/angular';
 import { MatDialogModule } from '@angular/material/dialog';
 import { AppRoutingModule } from './app-routing.module';
-import { GalleryModule } from  'ng-gallery';
+import { GalleryModule } from 'ng-gallery';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LightboxModule } from 'ng-gallery/lightbox';
 // Components
 import { AppComponent } from './app.component';
@@ -58,11 +58,12 @@ import { FaqItemComponent } from './homepage/shared/components/faq/faq-item/faq-
     TariffsComponent,
     GalleryComponent,
     FaqComponent,
-    FaqItemComponent
+    FaqItemComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     SwiperModule,
     FormsModule,
     MatDialogModule,
@@ -71,11 +72,10 @@ import { FaqItemComponent } from './homepage/shared/components/faq/faq-item/faq-
     GalleryModule.withConfig({
       // thumbView: 'contain',
     }),
-    LightboxModule
+    LightboxModule,
   ],
-  exports: [
-  ],
+  exports: [],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

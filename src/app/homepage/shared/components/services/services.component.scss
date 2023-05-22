@@ -2,6 +2,9 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
   & .services__title {
     font-family: "Ubuntu";
     margin-top: 40px;
@@ -42,6 +45,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+
   & .services__card {
     width: 100%;
     min-height: 240px;

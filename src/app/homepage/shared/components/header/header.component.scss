@@ -1,67 +1,73 @@
 .header__wrapper {
-    width: 100%;
-    min-height: 70px;
-    border-top: 5px solid #C7DBEC;
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-    // left: 50%;
-    // transform: translateX(-50%);
+  width: 100%;
+  min-height: 70px;
+  border-top: 5px solid #c7dbec;
+  position: fixed;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  top: 0;
+  z-index: 9999;
+  // left: 50%;
+  // transform: translateX(-50%);
+  transition: all 250ms ease-in-out;
+  &.filled {
+    background: #fff;
     transition: all 250ms ease-in-out;
-    &.filled {
-        background: #fff;
-        transition: all 250ms ease-in-out;
-        box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  &.sticky {
+    position: fixed;
+    transition: all 250ms ease-in-out;
+    box-shadow: 0px 6px 12px rgb(214, 214, 214, 0.7);
+    background: #fff;
+    & .header {
+      padding: unset;
+      align-items: center;
+      min-height: 80px;
+      transition: all 250ms ease-in-out;
     }
-    &.sticky {
-        position: fixed;
-        transition: all 250ms ease-in-out;
-        box-shadow: 0px 6px 12px rgb(214, 214, 214, .7);
-        background: #fff;
-        & .header {
-            padding: unset;
-            align-items: center;
-            min-height: 80px;
-            transition: all 250ms ease-in-out;
-        }
-    }
-    .header {
-        max-width: 1200px;
+  }
+  .header {
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    & .header__nav {
+      max-width: 584px;
+      width: 100%;
+      & ul {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        align-items: center;
         justify-content: space-between;
-        margin: 0 auto;
-        & .header__nav {
-            max-width: 584px;
-            width: 100%;
-            & ul {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: space-between;
-                & .header__navigation-item a {
-                    text-decoration: none;
-                    color: #282828;
-                    transition: all 250ms ease-in-out;
-                    -webkit-transition: all 250ms ease-in-out;
-                    -moz-transition: all 250ms ease-in-out;
-                    -ms-transition: all 250ms ease-in-out;
-                    -o-transition: all 250ms ease-in-out;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0);
-                    &:hover {
-                        color: #2187c7;
-                        border-bottom: 1px solid rgba(#2187c7, 1);
-                        cursor: pointer;
-                        transition: all 250ms ease-in-out;
-                        -webkit-transition: all 250ms ease-in-out;
-                        -moz-transition: all 250ms ease-in-out;
-                        -ms-transition: all 250ms ease-in-out;
-                        -o-transition: all 250ms ease-in-out;
-                    }
-                }
-            }
+        & .header__navigation-item a {
+          text-decoration: none;
+          color: #282828;
+          transition: all 250ms ease-in-out;
+          -webkit-transition: all 250ms ease-in-out;
+          -moz-transition: all 250ms ease-in-out;
+          -ms-transition: all 250ms ease-in-out;
+          -o-transition: all 250ms ease-in-out;
+          border-bottom: 1px solid rgba(255, 255, 255, 0);
+          &:hover {
+            color: #2187c7;
+            border-bottom: 1px solid rgba(#2187c7, 1);
+            cursor: pointer;
+            transition: all 250ms ease-in-out;
+            -webkit-transition: all 250ms ease-in-out;
+            -moz-transition: all 250ms ease-in-out;
+            -ms-transition: all 250ms ease-in-out;
+            -o-transition: all 250ms ease-in-out;
+          }
         }
+      }
     }
+  }
 }

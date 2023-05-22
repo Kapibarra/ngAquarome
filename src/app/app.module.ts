@@ -33,6 +33,7 @@ import { TariffsComponent } from './homepage/shared/components/tariffs/tariffs.c
 import { GalleryComponent } from './homepage/shared/components/gallery/gallery.component';
 import { FaqComponent } from './homepage/shared/components/faq/faq.component';
 import { FaqItemComponent } from './homepage/shared/components/faq/faq-item/faq-item.component';
+import { BurgerComponent } from './homepage/shared/components/burger/burger.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { FaqItemComponent } from './homepage/shared/components/faq/faq-item/faq-
     GalleryComponent,
     FaqComponent,
     FaqItemComponent,
+    BurgerComponent,
   ],
   imports: [
     BrowserModule,

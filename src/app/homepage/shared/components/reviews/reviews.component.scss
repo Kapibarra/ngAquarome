@@ -15,6 +15,12 @@
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
+    & .reviews__img {
+      & img {
+        width: 100%;
+        max-width: 450px;
+      }
+    }
     & .reviews__card {
       background: #ffffff;
       box-shadow: 0px 0px 30px rgba(48, 54, 77, 0.1);

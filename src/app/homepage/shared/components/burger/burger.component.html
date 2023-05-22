@@ -1,0 +1,38 @@
+<div class="burger-menu" [class.active]="active" (click)="onBurgerClicked()">
+  <div class="burger-container">
+    <div class="burger-inner"></div>
+  </div>
+  <div class="overlay">
+    <div class="burger__logo"><img src="assets/image/mainlogo.svg" /></div>
+    <div class="burger__nav-contacts">
+      <a href="tel:+79998391820" class="burger__nav-phone"
+        >+ 7 (999) 839-18-20</a
+      >
+      <p class="burger__nav-time">Ежедневно с 10:00 до 22:00</p>
+    </div>
+
+    <ul class="burger__nav">
+      <li class="header__navigation-item">
+        <a (click)="onClickScroll('main')">Главная</a>
+      </li>
+      <li class="header__navigation-item">
+        <a (click)="onClickScroll('reasonsabout')">О нас</a>
+      </li>
+      <li class="header__navigation-item">
+        <a (click)="onClickScroll('services')">Обслуживание</a>
+      </li>
+      <li class="header__navigation-item">
+        <a (click)="onClickScroll('reviews')">Отзывы</a>
+      </li>
+      <li class="header__navigation-item">
+        <a (click)="onClickScroll('tariffs')">Услуги</a>
+      </li>
+      <li class="header__navigation-item">
+        <a (click)="onClickScroll('contacts')">Контакты</a>
+      </li>
+    </ul>
+    <div class="burger__copyright">
+      © <a href="https://madstack.ru"><span>MadStack</span> Digital Agency</a>
+    </div>
+  </div>
+</div>
